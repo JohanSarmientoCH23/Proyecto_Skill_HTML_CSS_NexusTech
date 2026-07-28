@@ -4,7 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/index-main.css">
+    <link rel="stylesheet" href="./assets/css/index-layout.css">
+    <link rel="stylesheet" href="./assets/css/index-components.css">
+    <link rel="stylesheet" href="./assets/css/index-responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
     <title>Nexus Tech | Blog de Tecnología</title>
 </head>
 
@@ -31,26 +37,29 @@
     </div>
 
     <!-- HEADER -->
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
     <header class="header">
         <div class="header-container">
             <div class="logo">
                 <a href="#inicio"><img src="./assets/img/logo-sin-fondo.png" alt="Nexus Tech" class="logo-img"></a>
             </div>
-            <nav class="navbar">
-                <ul class="nav-list">
-                    <li><a href="#inicio" class="nav-link">Inicio</a></li>
-                    <li><a href="#articulos" class="nav-link">Categorias</a></li>
-                    <li><a href="#articulos" class="nav-link">Reseñas</a></li>
-                    <li><a href="#newsletter" class="nav-link">Comunidad</a></li>
-                    <li><a href="#footer" class="nav-link">Eventos</a></li>
-                    <li><a href="#footer" class="nav-link">Contacto</a></li>
-                </ul>
-            </nav>
-            <div class="btn-suscribiste">
-                <a href="#newsletter" class="sus-btn">Suscribirse</a>
-            </div>
+            <label for="nav-toggle" class="hamburger" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
         </div>
     </header>
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li><a href="#inicio" class="nav-link">Inicio</a></li>
+            <li><a href="./pages/categorias.html" class="nav-link">Categorias</a></li>
+            <li><a href="./pages/resenas.html" class="nav-link">Reseñas</a></li>
+            <li><a href="#newsletter" class="nav-link">Comunidad</a></li>
+            <li><a href="#footer" class="nav-link">Eventos</a></li>
+            <li><a href="#footer" class="nav-link">Contacto</a></li>
+        </ul>
+    </nav>
 
     <!-- HERO -->
     <section class="hero" id="inicio">
@@ -363,7 +372,7 @@
                     <ul class="footer-links">
                         <li><a href="#inicio" class="footer-link">Inicio</a></li>
                         <li><a href="#articulos" class="footer-link">Categorías</a></li>
-                        <li><a href="#articulos" class="footer-link">Reseñas</a></li>
+                        <li><a href="./pages/resenas.html" class="footer-link">Reseñas</a></li>
                         <li><a href="#newsletter" class="footer-link">Comunidad</a></li>
                         <li><a href="#footer" class="footer-link">Eventos</a></li>
                         <li><a href="#footer" class="footer-link">Contacto</a></li>

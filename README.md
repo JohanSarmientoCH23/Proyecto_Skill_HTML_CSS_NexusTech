@@ -130,8 +130,6 @@ Proyecto_Skill_HTML_CSS_NexusTech/
 
 ## Animaciones CSS
 
-Ver **[GUIA_DE_ESTUDIO_CSS.md](./GUIA_DE_ESTUDIO_CSS.md)** para una guia completa de como funciona cada animacion.
-
 ### Resumen de Animaciones
 | Animacion | Tipo | Duracion | Uso |
 |-----------|------|----------|-----|
@@ -153,41 +151,12 @@ Ver **[GUIA_DE_ESTUDIO_CSS.md](./GUIA_DE_ESTUDIO_CSS.md)** para una guia complet
 
 ---
 
-## Requisitos Tecnicos
-
-### Obligatorios
-- [x] Solo HTML5 y CSS3
-- [x] Sin JavaScript
-- [x] Sin Bootstrap/Tailwind/Sass
-- [x] Sin librerias externas
-- [x] Variables CSS para temas
-- [x] Flexbox y Grid
-- [x] Animaciones puras con keyframes
-- [x] Responsive con breakpoints
-
 ### Optimizacion
 - [x] Animaciones optimizadas para 60fps
 - [x] Uso de `will-change` donde es necesario
 - [x] `backdrop-filter` para glassmorphism
 - [x] `clamp()` para tipografia responsiva
 - [x] `box-shadow` para profundidad sin imagenes
-
----
-
-## Como Ejecutar
-
-1. Clonar el repositorio
-2. Abrir `index.html` en cualquier navegador moderno
-3. No se necesita servidor local (archivos estaticos)
-
----
-
-## Navegadores Compatibles
-
-- Chrome 80+
-- Firefox 75+
-- Safari 13+
-- Edge 80+
 
 ---
 

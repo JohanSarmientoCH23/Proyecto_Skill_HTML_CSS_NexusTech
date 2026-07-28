@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resenas | Nexus Tech</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/layout.css">
+    <link rel="stylesheet" href="../assets/css/components.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link rel="stylesheet" href="../assets/css/reviews.css">
+</head>
+<body>
+    <input type="checkbox" id="nav-toggle" class="cat-nav-toggle">
+    <header class="cat-header">
+        <div class="cat-header-container">
+            <div class="cat-logo">
+                <a href="../index.html"><img src="../assets/img/logo-sin-fondo.png" alt="Nexus Tech"></a>
+            </div>
+            <label for="nav-toggle" class="cat-hamburger" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+    </header>
+    <nav class="cat-nav">
+        <ul class="cat-nav-list">
+            <li><a href="../index.html" class="cat-nav-link">Inicio</a></li>
+            <li><a href="categorias.html" class="cat-nav-link">Categorias</a></li>
+            <li><a href="resenas.html" class="cat-nav-link">Resenas</a></li>
+            <li><a href="comunidad.html" class="cat-nav-link">Comunidad</a></li>
+            <li><a href="eventos.html" class="cat-nav-link">Eventos</a></li>
+            <li><a href="contacto.html" class="cat-nav-link">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- ==========================================
+         HERO
+         ========================================== -->
+    <section class="rv-hero">
+        <div class="rv-hero-bg"></div>
+        <div class="rv-hero-content">
+            <span class="rv-hero-label">Hardware &amp; Software Exploration</span>
+            <h1 class="rv-hero-title">Analisis Profundo</h1>
+            <p class="rv-hero-desc">Exploramos la frontera tecnologica con rigor tecnico y pasion por el detalle. Desde estaciones de trabajo cuanticas hasta las interfaces neuronales del manana.</p>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         FEATURED REVIEWS
+         ========================================== -->
+    <section class="rv-section">
+        <div class="rv-container">
+            <div class="rv-section-header">
+                <h2 class="rv-section-title">Hardware Destacado</h2>
+                <div class="rv-section-line"></div>
+            </div>
+            <div class="rv-grid-4">
+
+                <!-- Card 1 -->
+                <div class="rv-card">
+                    <div class="rv-card-img">
+                        <img src="../assets/img/gaget.jpeg" alt="Titanium X1">
+                        <span class="rv-card-score">9.8/10</span>
+                    </div>
+                    <div class="rv-card-body">
+                        <span class="rv-card-category rv-cat-laptops">LAPTOPS</span>
+                        <h3 class="rv-card-name">Titanium X1</h3>
+                        <p class="rv-card-model">Model Gen-V Nexus</p>
+                        <div class="rv-stars">
+                            <span class="rv-star filled"></span>
+                            <span class="rv-star filled"></span>
+                            <span class="rv-star filled"></span>
+                            <span class="rv-star filled"></span>
+                            <span class="rv-star filled"></span>
+                        </div>
+                        <p class="rv-card-desc">La redefinicion de la potencia movil. Un chasis de aleacion aeroespacial con el nuevo chip Quantum-9.</p>
+                        <a href="#" class="rv-card-btn">Leer mas &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="rv-card">
+                    <div class="rv-card-img">
+                        <img src="../assets/img/ia.jpg" alt="Sonic Echo Pro">
+                        <span class="rv-card-score rv-score-tertiary">9.5/10</span>
+                    </div>
+                    <div class="rv-card-body">
+                        <span class="rv-card-category rv-cat-audio">AUDIO</span>
+                        <h3 class="rv-card-name">Sonic Echo Pro</h3>
+                        <p class="rv-card-model">Audiophile Edition</p>
+                        <div class="rv-stars">
+                            <span class="rv-star filled"></span>
+                            <span class="rv-star filled"></span>
+                            <span class="rv-star filled"></span>
+                            <span class="rv-star filled"></span>
+                            <span class="rv-star half"></span>
+                        </div>
+                        <p class="rv-card-desc">Fidelidad sin concesiones. Cancelacion de ruido activa adaptada por IA y drivers de grafeno.</p>
+                        <a href="#" class="rv-card-btn">Leer mas &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="rv-card">
+                    <div class="rv-card-img">
+                        <img src="../assets/img/realidad-virtual.jpeg" alt="Vision Infinite">
+                        <span class="rv-card-score rv-score-cyan">9.2/10</span>
+                    </div>
+                    <div class="rv-card-body">
+                        <span class="rv-card-category rv-cat-display">DISPLAY</span>
+                        <h3 class="rv-card-name">Vision Infinite</h3>
+                        <p class="rv-card-model">34" Curved OLED</p>
+                        <div class="rv-stars">
+                            <span class="rv-star filled"></span>
+                            <span class="rv-star filled"></span>
+                            <span class="rv-star filled"></span>
+                            <span class="rv-star filled"></span>
+                            <span class="rv-star"></span>
+                        </div>
+                        <p class="rv-card-desc">Negros puros y latencia cero. El monitor definitivo para creadores de contenido y gamers de elite.</p>
+                        <a href="#" class="rv-card-btn">Leer mas &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="rv-card">
+                    <div class="rv-card-img">
+                        <img src="../assets/img/cloud.jpeg" alt="Lumix Cyber">
+                        <span class="rv-card-score">9.9/10</span>
+                    </div>
+                    <div class="rv-card-body">
+                        <span class="rv-card-category rv-cat-imagen">IMAGEN</span>
+                        <h3 class="rv-card-name">Lumix Cyber</h3>
+                        <p class="rv-card-model">Mirrorless 8K Raw</p>
+                        <div class="rv-stars">
+                            <span class="rv-star filled"></span>
+                            <span class="rv-star filled"></span>
+                            <span class="rv-star filled"></span>
+                            <span class="rv-star filled"></span>
+                            <span class="rv-star filled"></span>
+                        </div>
+                        <p class="rv-card-desc">Captura la realidad en 8K sin comprimir. Estabilizacion de 7 ejes y enfoque predictivo por IA.</p>
+                        <a href="#" class="rv-card-btn">Leer mas &rarr;</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         TABLA COMPARATIVA
+         ========================================== -->
+    <section class="rv-section">
+        <div class="rv-container">
+            <div class="rv-section-header-center">
+                <h2 class="rv-section-title">Tabla Comparativa</h2>
+                <p class="rv-section-subtitle">Compara las especificaciones tecnicas de los lideres del mercado para tomar la mejor decision.</p>
+            </div>
+            <div class="rv-table-wrapper">
+                <table class="rv-table">
+                    <thead>
+                        <tr>
+                            <th>Producto</th>
+                            <th>Procesador</th>
+                            <th>RAM</th>
+                            <th>Pantalla</th>
+                            <th>Precio</th>
+                            <th>Calificacion</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="rv-table-product">
+                                <span class="rv-table-icon">&#128187;</span>
+                                <span>Titanium X1</span>
+                            </td>
+                            <td>Quantum-9 (12 Cores)</td>
+                            <td>64GB LPDDR5x</td>
+                            <td>14" Mini-LED 120Hz</td>
+                            <td class="rv-table-price">$2,499</td>
+                            <td>
+                                <div class="rv-table-rating">
+                                    <div class="rv-rating-bar"><div class="rv-rating-fill" style="width: 98%"></div></div>
+                                    <span class="rv-rating-num">9.8</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="rv-table-product">
+                                <span class="rv-table-icon">&#128241;</span>
+                                <span>Nexus Phone S24</span>
+                            </td>
+                            <td>Snapdragon X Gen 4</td>
+                            <td>12GB RAM</td>
+                            <td>6.7" AMOLED 144Hz</td>
+                            <td class="rv-table-price">$1,099</td>
+                            <td>
+                                <div class="rv-table-rating">
+                                    <div class="rv-rating-bar"><div class="rv-rating-fill" style="width: 91%"></div></div>
+                                    <span class="rv-rating-num">9.1</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="rv-table-product">
+                                <span class="rv-table-icon">&#9881;</span>
+                                <span>Hyper Workstation</span>
+                            </td>
+                            <td>Threadripper Pro X</td>
+                            <td>128GB ECC RAM</td>
+                            <td>GPU: RTX 6000</td>
+                            <td class="rv-table-price">$5,200</td>
+                            <td>
+                                <div class="rv-table-rating">
+                                    <div class="rv-rating-bar"><div class="rv-rating-fill" style="width: 95%"></div></div>
+                                    <span class="rv-rating-num">9.5</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="rv-table-product">
+                                <span class="rv-table-icon">&#127911;</span>
+                                <span>Sonic Echo Pro</span>
+                            </td>
+                            <td>Neural DSP v3</td>
+                            <td>N/A</td>
+                            <td>ANC Adaptativa</td>
+                            <td class="rv-table-price">$549</td>
+                            <td>
+                                <div class="rv-table-rating">
+                                    <div class="rv-rating-bar"><div class="rv-rating-fill" style="width: 95%"></div></div>
+                                    <span class="rv-rating-num">9.5</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="rv-table-product">
+                                <span class="rv-table-icon">&#128424;</span>
+                                <span>Vision Infinite</span>
+                            </td>
+                            <td>N/A</td>
+                            <td>N/A</td>
+                            <td>34" OLED 175Hz</td>
+                            <td class="rv-table-price">$1,899</td>
+                            <td>
+                                <div class="rv-table-rating">
+                                    <div class="rv-rating-bar"><div class="rv-rating-fill" style="width: 92%"></div></div>
+                                    <span class="rv-rating-num">9.2</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="rv-table-product">
+                                <span class="rv-table-icon">&#128247;</span>
+                                <span>Lumix Cyber</span>
+                            </td>
+                            <td>ISP Quantum X</td>
+                            <td>16GB Buffer</td>
+                            <td>8K RAW 60fps</td>
+                            <td class="rv-table-price">$3,799</td>
+                            <td>
+                                <div class="rv-table-rating">
+                                    <div class="rv-rating-bar"><div class="rv-rating-fill" style="width: 99%"></div></div>
+                                    <span class="rv-rating-num">9.9</span>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         DEJAR RESEÑA
+         ========================================== -->
+    <section class="rv-section">
+        <div class="rv-container-narrow">
+            <div class="rv-section-header-center">
+                <h2 class="rv-section-title">Deja tu Resena</h2>
+                <p class="rv-section-subtitle">Comparte tu experiencia con la comunidad Nexus Tech.</p>
+            </div>
+            <form class="rv-form">
+                <div class="rv-form-row">
+                    <div class="rv-form-group">
+                        <label class="rv-form-label" for="rv-name">Nombre</label>
+                        <input class="rv-form-input" type="text" id="rv-name" placeholder="Tu nombre completo">
+                    </div>
+                    <div class="rv-form-group">
+                        <label class="rv-form-label" for="rv-email">Email</label>
+                        <input class="rv-form-input" type="email" id="rv-email" placeholder="tu@email.com">
+                    </div>
+                </div>
+                <div class="rv-form-row">
+                    <div class="rv-form-group">
+                        <label class="rv-form-label" for="rv-product">Producto</label>
+                        <select class="rv-form-input" id="rv-product">
+                            <option value="">Selecciona un producto</option>
+                            <option>Titanium X1</option>
+                            <option>Sonic Echo Pro</option>
+                            <option>Vision Infinite</option>
+                            <option>Lumix Cyber</option>
+                            <option>Nexus Phone S24</option>
+                            <option>Hyper Workstation</option>
+                        </select>
+                    </div>
+                    <div class="rv-form-group">
+                        <label class="rv-form-label">Calificacion</label>
+                        <div class="rv-form-stars">
+                            <span class="rv-form-star"></span>
+                            <span class="rv-form-star"></span>
+                            <span class="rv-form-star"></span>
+                            <span class="rv-form-star"></span>
+                            <span class="rv-form-star"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="rv-form-group">
+                    <label class="rv-form-label" for="rv-review">Resena</label>
+                    <textarea class="rv-form-input rv-form-textarea" id="rv-review" rows="5" placeholder="Cuenta tu experiencia con el producto..."></textarea>
+                </div>
+                <button type="submit" class="rv-form-submit">Enviar Resena</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         RESEÑAS DE USUARIOS
+         ========================================== -->
+    <section class="rv-section">
+        <div class="rv-container">
+            <div class="rv-section-header-center">
+                <h2 class="rv-section-title">La Voz de la Comunidad</h2>
+                <div class="rv-section-accent-line"></div>
+            </div>
+            <div class="rv-grid-3">
+
+                <!-- User Review 1 -->
+                <div class="rv-review-card">
+                    <div class="rv-review-quote">&ldquo;</div>
+                    <div class="rv-review-user">
+                        <div class="rv-review-avatar">
+                            <img src="../assets/img/ia.jpg" alt="Elena Vance">
+                        </div>
+                        <div>
+                            <h4 class="rv-review-name">Elena Vance</h4>
+                            <span class="rv-review-role rv-role-primary">Lead Developer</span>
+                        </div>
+                    </div>
+                    <p class="rv-review-text">El analisis del Titanium X1 fue decisivo para mi compra. No solo detallan lo visual, sino que profundizan en el rendimiento termico y los tiempos de compilacion reales.</p>
+                    <div class="rv-review-stars">
+                        <span class="rv-star-sm filled"></span>
+                        <span class="rv-star-sm filled"></span>
+                        <span class="rv-star-sm filled"></span>
+                        <span class="rv-star-sm filled"></span>
+                        <span class="rv-star-sm filled"></span>
+                    </div>
+                </div>
+
+                <!-- User Review 2 -->
+                <div class="rv-review-card">
+                    <div class="rv-review-quote rv-quote-cyan">&ldquo;</div>
+                    <div class="rv-review-user">
+                        <div class="rv-review-avatar rv-avatar-cyan">
+                            <img src="../assets/img/ciberseguridad.jpeg" alt="Markus Wright">
+                        </div>
+                        <div>
+                            <h4 class="rv-review-name">Markus Wright</h4>
+                            <span class="rv-review-role rv-role-cyan">Audio Engineer</span>
+                        </div>
+                    </div>
+                    <p class="rv-review-text">Por fin una resena de audio que habla de curvas de respuesta reales y no solo de marketing. Los Sonic Echo Pro son exactamente como los describieron.</p>
+                    <div class="rv-review-stars">
+                        <span class="rv-star-sm filled"></span>
+                        <span class="rv-star-sm filled"></span>
+                        <span class="rv-star-sm filled"></span>
+                        <span class="rv-star-sm filled"></span>
+                        <span class="rv-star-sm half"></span>
+                    </div>
+                </div>
+
+                <!-- User Review 3 -->
+                <div class="rv-review-card">
+                    <div class="rv-review-quote rv-quote-tertiary">&ldquo;</div>
+                    <div class="rv-review-user">
+                        <div class="rv-review-avatar rv-avatar-tertiary">
+                            <img src="../assets/img/programacion.jpeg" alt="Sofia Chen">
+                        </div>
+                        <div>
+                            <h4 class="rv-review-name">Sofia Chen</h4>
+                            <span class="rv-review-role rv-role-tertiary">Digital Artist</span>
+                        </div>
+                    </div>
+                    <p class="rv-review-text">La seccion de comparacion de pantallas me ahorro horas de investigacion. La precision de color del monitor Vision Infinite es tal cual la resenaron.</p>
+                    <div class="rv-review-stars">
+                        <span class="rv-star-sm filled"></span>
+                        <span class="rv-star-sm filled"></span>
+                        <span class="rv-star-sm filled"></span>
+                        <span class="rv-star-sm filled"></span>
+                        <span class="rv-star-sm filled"></span>
+                    </div>
+                </div>
+
+                <!-- User Review 4 -->
+                <div class="rv-review-card">
+                    <div class="rv-review-quote">&ldquo;</div>
+                    <div class="rv-review-user">
+                        <div class="rv-review-avatar">
+                            <img src="../assets/img/cloud.jpeg" alt="Carlos Mendez">
+                        </div>
+                        <div>
+                            <h4 class="rv-review-name">Carlos Mendez</h4>
+                            <span class="rv-review-role rv-role-primary">Sysadmin</span>
+                        </div>
+                    </div>
+                    <p class="rv-review-text">La Hyper Workstation es una bestia. La tabla comparativa me ayudo a justificar la inversion ante mi equipo. Nexus Tech es mi referencia.</p>
+                    <div class="rv-review-stars">
+                        <span class="rv-star-sm filled"></span>
+                        <span class="rv-star-sm filled"></span>
+                        <span class="rv-star-sm filled"></span>
+                        <span class="rv-star-sm filled"></span>
+                        <span class="rv-star-sm filled"></span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="cat-footer">
+        <div class="cat-footer-container">
+            <div class="cat-footer-grid">
+                <div class="cat-footer-brand">
+                    <img src="../assets/img/logo-sin-fondo.png" alt="Nexus Tech" class="cat-footer-logo">
+                    <p class="cat-footer-desc">El blog lider en tecnologia que te mantiene al dia con las ultimas tendencias, innovaciones y analisis del mundo tecnologico.</p>
+                    <div class="cat-social-links">
+                        <a href="https://twitter.com" class="cat-social-link" target="_blank" rel="noopener">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                        </a>
+                        <a href="https://github.com" class="cat-social-link" target="_blank" rel="noopener">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                        </a>
+                        <a href="https://instagram.com" class="cat-social-link" target="_blank" rel="noopener">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.643.069 4.849 0 3.204-.012 3.584-.069 4.849-.148 3.228-1.667 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.252-.148-4.771-1.691-4.919-4.919-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.584.07-4.849.148-3.228 1.667-4.771 4.919-4.919 1.266-.057 1.644-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.072 1.687-.072 4.947 0 3.259.014 3.668.072 4.947.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.358-.2 6.78-2.618 6.98-6.98.059-1.28.072-1.689.072-4.948 0-3.259-.013-3.668-.072-4.948-.2-4.358-2.618-6.78-6.98-6.98C15.668 2.177 15.261 2.163 12 2.163zm0 5.838c-3.403 0-6.167 2.764-6.167 6.167s2.764 6.167 6.167 6.167 6.167-2.764 6.167-6.167S15.403 8.001 12 8.001zm0 10.166c-2.209 0-4-1.791-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44 0 .795.645 1.44 1.441 1.44.795 0 1.439-.645 1.439-1.44 0-.795-.644-1.44-1.439-1.44z"/></svg>
+                        </a>
+                        <a href="https://youtube.com" class="cat-social-link" target="_blank" rel="noopener">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="cat-footer-section-title">Enlaces rapidos</h3>
+                    <ul class="cat-footer-links">
+                        <li><a href="../index.html" class="cat-footer-link">Inicio</a></li>
+                        <li><a href="categorias.html" class="cat-footer-link">Categorias</a></li>
+                        <li><a href="resenas.html" class="cat-footer-link">Resenas</a></li>
+                        <li><a href="comunidad.html" class="cat-footer-link">Comunidad</a></li>
+                        <li><a href="eventos.html" class="cat-footer-link">Eventos</a></li>
+                        <li><a href="contacto.html" class="cat-footer-link">Contacto</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="cat-footer-section-title">Categorias populares</h3>
+                    <ul class="cat-footer-links">
+                        <li><a href="#" class="cat-footer-link">Inteligencia Artificial</a></li>
+                        <li><a href="#" class="cat-footer-link">Ciberseguridad</a></li>
+                        <li><a href="#" class="cat-footer-link">Gadgets</a></li>
+                        <li><a href="#" class="cat-footer-link">Realidad Virtual</a></li>
+                        <li><a href="#" class="cat-footer-link">Cloud Computing</a></li>
+                        <li><a href="#" class="cat-footer-link">Desarrollo</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="cat-footer-section-title">Contacto</h3>
+                    <div class="cat-footer-contact">
+                        <div class="cat-footer-contact-item">
+                            <svg class="cat-footer-contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                            <span>contacto@nexustech.com</span>
+                        </div>
+                        <div class="cat-footer-contact-item">
+                            <svg class="cat-footer-contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.64-3.49 19.79 19.79 0 01-6-6 19.79 19.79 0 01-3.49-8.64A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
+                            </svg>
+                            <span>+57 300 123 4567</span>
+                        </div>
+                        <div class="cat-footer-contact-item">
+                            <svg class="cat-footer-contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                            <span>Bucaramanga, Colombia</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cat-footer-bottom">
+                <p class="cat-footer-copyright">&copy; 2026 Nexus Tech. Todos los derechos reservados.</p>
+                <div class="cat-footer-bottom-links">
+                    <a href="#">Politica de privacidad</a>
+                    <a href="#">Terminos de uso</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
