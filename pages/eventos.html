@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos | Nexus Tech</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/layout.css">
+    <link rel="stylesheet" href="../assets/css/components.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link rel="stylesheet" href="../assets/css/eventos.css">
+</head>
+<body>
+    <input type="checkbox" id="nav-toggle" class="cat-nav-toggle">
+    <header class="cat-header">
+        <div class="cat-header-container">
+            <div class="cat-logo">
+                <a href="../index.html"><img src="../assets/img/logo-sin-fondo.png" alt="Nexus Tech"></a>
+            </div>
+            <label for="nav-toggle" class="cat-hamburger" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+    </header>
+    <nav class="cat-nav">
+        <ul class="cat-nav-list">
+            <li><a href="../index.html" class="cat-nav-link">Inicio</a></li>
+            <li><a href="categorias.html" class="cat-nav-link">Categorias</a></li>
+            <li><a href="resenas.html" class="cat-nav-link">Resenas</a></li>
+            <li><a href="comunidad.html" class="cat-nav-link">Comunidad</a></li>
+            <li><a href="eventos.html" class="cat-nav-link">Eventos</a></li>
+            <li><a href="contacto.html" class="cat-nav-link">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- ==========================================
+         HERO
+         ========================================== -->
+    <section class="ev-hero">
+        <div class="ev-hero-bg"></div>
+        <div class="ev-hero-content">
+            <span class="ev-hero-label">Networking Global</span>
+            <h1 class="ev-hero-title">Calendario Global de Innovacion</h1>
+            <p class="ev-hero-desc">Explora los epicentros de la vanguardia tecnologica. Mantente al dia con las conferencias que definen el futuro de la humanidad.</p>
+            <div class="ev-hero-actions">
+                <a href="#calendar" class="ev-btn-primary">Ver Calendario</a>
+                <a href="#featured" class="ev-btn-secondary">Eventos Destacados</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         SECTION 1 — CALENDARIO MENSUAL
+         ========================================== -->
+    <section class="ev-section" id="calendar">
+        <div class="ev-container">
+            <div class="ev-section-header">
+                <h2 class="ev-section-title">Mayo 2026</h2>
+                <p class="ev-section-desc">Destacados del mes en el ecosistema tech</p>
+            </div>
+            <div class="ev-calendar">
+                <div class="ev-calendar-header">
+                    <span class="ev-calendar-day-name">Lun</span>
+                    <span class="ev-calendar-day-name">Mar</span>
+                    <span class="ev-calendar-day-name">Mie</span>
+                    <span class="ev-calendar-day-name">Jue</span>
+                    <span class="ev-calendar-day-name">Vie</span>
+                    <span class="ev-calendar-day-name">Sab</span>
+                    <span class="ev-calendar-day-name">Dom</span>
+                </div>
+                <div class="ev-calendar-grid">
+                    <div class="ev-calendar-cell ev-calendar-cell-empty"></div>
+                    <div class="ev-calendar-cell ev-calendar-cell-empty"></div>
+                    <div class="ev-calendar-cell">
+                        <span class="ev-calendar-date">01</span>
+                    </div>
+                    <div class="ev-calendar-cell ev-calendar-cell-event ev-calendar-cell-primary">
+                        <span class="ev-calendar-date ev-calendar-date-active">02</span>
+                        <span class="ev-calendar-event ev-calendar-event-primary">Dev Meetup</span>
+                    </div>
+                    <div class="ev-calendar-cell">
+                        <span class="ev-calendar-date">03</span>
+                    </div>
+                    <div class="ev-calendar-cell">
+                        <span class="ev-calendar-date">04</span>
+                    </div>
+                    <div class="ev-calendar-cell">
+                        <span class="ev-calendar-date">05</span>
+                    </div>
+                    <div class="ev-calendar-cell">
+                        <span class="ev-calendar-date">06</span>
+                    </div>
+                    <div class="ev-calendar-cell ev-calendar-cell-event ev-calendar-cell-secondary">
+                        <span class="ev-calendar-date ev-calendar-date-active-secondary">07</span>
+                        <span class="ev-calendar-event ev-calendar-event-secondary">Web3 Summit</span>
+                    </div>
+                    <div class="ev-calendar-cell">
+                        <span class="ev-calendar-date">08</span>
+                    </div>
+                    <div class="ev-calendar-cell">
+                        <span class="ev-calendar-date">09</span>
+                    </div>
+                    <div class="ev-calendar-cell">
+                        <span class="ev-calendar-date">10</span>
+                    </div>
+                    <div class="ev-calendar-cell ev-calendar-cell-event ev-calendar-cell-tertiary">
+                        <span class="ev-calendar-date ev-calendar-date-active-tertiary">11</span>
+                        <span class="ev-calendar-event ev-calendar-event-tertiary">Google I/O</span>
+                    </div>
+                    <div class="ev-calendar-cell">
+                        <span class="ev-calendar-date">12</span>
+                    </div>
+                    <div class="ev-calendar-cell">
+                        <span class="ev-calendar-date">13</span>
+                    </div>
+                    <div class="ev-calendar-cell">
+                        <span class="ev-calendar-date">14</span>
+                    </div>
+                    <div class="ev-calendar-cell ev-calendar-cell-event ev-calendar-cell-cyan">
+                        <span class="ev-calendar-date ev-calendar-date-active-cyan">15</span>
+                        <span class="ev-calendar-event ev-calendar-event-cyan">CES Preview</span>
+                    </div>
+                    <div class="ev-calendar-cell">
+                        <span class="ev-calendar-date">16</span>
+                    </div>
+                    <div class="ev-calendar-cell">
+                        <span class="ev-calendar-date">17</span>
+                    </div>
+                    <div class="ev-calendar-cell">
+                        <span class="ev-calendar-date">18</span>
+                    </div>
+                    <div class="ev-calendar-cell">
+                        <span class="ev-calendar-date">19</span>
+                    </div>
+                    <div class="ev-calendar-cell ev-calendar-cell-event ev-calendar-cell-primary">
+                        <span class="ev-calendar-date ev-calendar-date-active">20</span>
+                        <span class="ev-calendar-event ev-calendar-event-primary">NVIDIA GTC</span>
+                    </div>
+                    <div class="ev-calendar-cell">
+                        <span class="ev-calendar-date">21</span>
+                    </div>
+                    <div class="ev-calendar-cell">
+                        <span class="ev-calendar-date">22</span>
+                    </div>
+                    <div class="ev-calendar-cell ev-calendar-cell-event ev-calendar-cell-rose">
+                        <span class="ev-calendar-date ev-calendar-date-active-rose">23</span>
+                        <span class="ev-calendar-event ev-calendar-event-rose">Apple WWDC</span>
+                    </div>
+                    <div class="ev-calendar-cell">
+                        <span class="ev-calendar-date">24</span>
+                    </div>
+                    <div class="ev-calendar-cell">
+                        <span class="ev-calendar-date">25</span>
+                    </div>
+                    <div class="ev-calendar-cell">
+                        <span class="ev-calendar-date">26</span>
+                    </div>
+                    <div class="ev-calendar-cell">
+                        <span class="ev-calendar-date">27</span>
+                    </div>
+                    <div class="ev-calendar-cell ev-calendar-cell-event ev-calendar-cell-secondary">
+                        <span class="ev-calendar-date ev-calendar-date-active-secondary">28</span>
+                        <span class="ev-calendar-event ev-calendar-event-secondary">Computex</span>
+                    </div>
+                    <div class="ev-calendar-cell">
+                        <span class="ev-calendar-date">29</span>
+                    </div>
+                    <div class="ev-calendar-cell">
+                        <span class="ev-calendar-date">30</span>
+                    </div>
+                    <div class="ev-calendar-cell">
+                        <span class="ev-calendar-date">31</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         SECTION 2 — EVENTOS DESTACADOS
+         ========================================== -->
+    <section class="ev-section ev-section-dark" id="featured">
+        <div class="ev-container">
+            <div class="ev-section-header">
+                <h2 class="ev-section-title">Eventos Destacados</h2>
+                <p class="ev-section-desc">Las conferencias y exposiciones que marcan la diferencia</p>
+            </div>
+            <div class="ev-featured-grid">
+
+                <div class="ev-event-card">
+                    <div class="ev-event-card-img">
+                        <img src="../assets/img/eventos/event-ces.jpg" alt="CES">
+                        <span class="ev-card-badge ev-card-badge-primary">Conference</span>
+                    </div>
+                    <div class="ev-event-card-body">
+                        <span class="ev-card-date-label">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                            7 - 10 Enero, 2026
+                        </span>
+                        <h3 class="ev-card-name">CES 2026</h3>
+                        <p class="ev-card-location">Las Vegas, Estados Unidos</p>
+                        <p class="ev-card-desc">La feria de tecnologia mas grande del mundo. Innovacion en consumo, robotica y IA.</p>
+                        <a href="https://www.ces.tech" target="_blank" rel="noopener" class="ev-card-btn">Learn More &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="ev-event-card">
+                    <div class="ev-event-card-img">
+                        <img src="../assets/img/eventos/event-google-io.jpg" alt="Google I/O">
+                        <span class="ev-card-badge ev-card-badge-secondary">Conference</span>
+                    </div>
+                    <div class="ev-event-card-body">
+                        <span class="ev-card-date-label">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                            14 - 15 Mayo, 2026
+                        </span>
+                        <h3 class="ev-card-name">Google I/O</h3>
+                        <p class="ev-card-location">Mountain View, Estados Unidos</p>
+                        <p class="ev-card-desc">Las ultimas innovaciones en IA, Android y el ecosistema Google.</p>
+                        <a href="https://io.google" target="_blank" rel="noopener" class="ev-card-btn">Learn More &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="ev-event-card">
+                    <div class="ev-event-card-img">
+                        <img src="../assets/img/eventos/event-wwdc.jpg" alt="WWDC">
+                        <span class="ev-card-badge ev-card-badge-tertiary">Product Launch</span>
+                    </div>
+                    <div class="ev-event-card-body">
+                        <span class="ev-card-date-label">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                            8 - 12 Junio, 2026
+                        </span>
+                        <h3 class="ev-card-name">Apple WWDC</h3>
+                        <p class="ev-card-location">Cupertino, Estados Unidos</p>
+                        <p class="ev-card-desc">La conferencia mundial de desarrolladores de Apple. iOS 20 y Apple Intelligence.</p>
+                        <a href="https://developer.apple.com/wwdc/" target="_blank" rel="noopener" class="ev-card-btn">Learn More &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="ev-event-card">
+                    <div class="ev-event-card-img">
+                        <img src="../assets/img/eventos/event-microsoft-build.jpg" alt="Microsoft Build">
+                        <span class="ev-card-badge ev-card-badge-cyan">Conference</span>
+                    </div>
+                    <div class="ev-event-card-body">
+                        <span class="ev-card-date-label">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                            19 - 22 Mayo, 2026
+                        </span>
+                        <h3 class="ev-card-name">Microsoft Build</h3>
+                        <p class="ev-card-location">Seattle, Estados Unidos</p>
+                        <p class="ev-card-desc">Desarrollo en la nube, IA generativa y el futuro de Windows.</p>
+                        <a href="https://www.microsoft.com/build" target="_blank" rel="noopener" class="ev-card-btn">Learn More &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="ev-event-card">
+                    <div class="ev-event-card-img">
+                        <img src="../assets/img/eventos/event-nvidia-gtc.jpg" alt="NVIDIA GTC">
+                        <span class="ev-card-badge ev-card-badge-rose">Summit</span>
+                    </div>
+                    <div class="ev-event-card-body">
+                        <span class="ev-card-date-label">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                            24 - 27 Marzo, 2026
+                        </span>
+                        <h3 class="ev-card-name">NVIDIA GTC</h3>
+                        <p class="ev-card-location">San Jose, Estados Unidos</p>
+                        <p class="ev-card-desc">El summit de IA y GPU mas importante del mundo. Computacion acelerada.</p>
+                        <a href="https://www.nvidia.com/gtc" target="_blank" rel="noopener" class="ev-card-btn">Learn More &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="ev-event-card">
+                    <div class="ev-event-card-img">
+                        <img src="../assets/img/eventos/event-computex.jpg" alt="Computex">
+                        <span class="ev-card-badge ev-card-badge-primary">Expo</span>
+                    </div>
+                    <div class="ev-event-card-body">
+                        <span class="ev-card-date-label">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                            2 - 5 Junio, 2026
+                        </span>
+                        <h3 class="ev-card-name">Computex</h3>
+                        <p class="ev-card-location">Taipei, Taiwan</p>
+                        <p class="ev-card-desc">La expo de hardware mas grande de Asia. Componentes y dispositivos.</p>
+                        <a href="https://www.computextaipei.com.tw" target="_blank" rel="noopener" class="ev-card-btn">Learn More &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="ev-event-card">
+                    <div class="ev-event-card-img">
+                        <img src="../assets/img/eventos/event-gamescom.jpg" alt="Gamescom">
+                        <span class="ev-card-badge ev-card-badge-tertiary">Expo</span>
+                    </div>
+                    <div class="ev-event-card-body">
+                        <span class="ev-card-date-label">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                            20 - 24 Agosto, 2026
+                        </span>
+                        <h3 class="ev-card-name">Gamescom</h3>
+                        <p class="ev-card-location">Colonia, Alemania</p>
+                        <p class="ev-card-desc">El evento de videojuegos mas grande del mundo. Premieres y hardware gaming.</p>
+                        <a href="#" class="ev-card-btn">Learn More &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="ev-event-card">
+                    <div class="ev-event-card-img">
+                        <img src="../assets/img/eventos/event-web-summit.jpg" alt="Web Summit">
+                        <span class="ev-card-badge ev-card-badge-secondary">Summit</span>
+                    </div>
+                    <div class="ev-event-card-body">
+                        <span class="ev-card-date-label">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                            3 - 6 Noviembre, 2026
+                        </span>
+                        <h3 class="ev-card-name">Web Summit</h3>
+                        <p class="ev-card-location">Lisboa, Portugal</p>
+                        <p class="ev-card-desc">El summit tecnologico mas grande de Europa. Startups, inversores y lideres.</p>
+                        <a href="https://websummit.com" target="_blank" rel="noopener" class="ev-card-btn">Learn More &rarr;</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         SECTION 3 — TIMELINE PROXIMOS EVENTOS
+         ========================================== -->
+    <section class="ev-section">
+        <div class="ev-container">
+            <div class="ev-section-header">
+                <h2 class="ev-section-title">Proximos Eventos</h2>
+                <p class="ev-section-desc">Las fechas clave que transformaran la industria este ano</p>
+            </div>
+            <div class="ev-timeline">
+                <div class="ev-timeline-line"></div>
+
+                <div class="ev-timeline-item">
+                    <div class="ev-timeline-dot ev-timeline-dot-primary"></div>
+                    <div class="ev-timeline-content">
+                        <div class="ev-timeline-date">14 Mayo, 2026</div>
+                        <h4 class="ev-timeline-name">Google I/O</h4>
+                        <p class="ev-timeline-location">Mountain View, CA &middot; 10:00 AM PST</p>
+                        <p class="ev-timeline-desc">Keynote principal con las novedades de Android, IA y servicios Google.</p>
+                    </div>
+                </div>
+
+                <div class="ev-timeline-item ev-timeline-item-right">
+                    <div class="ev-timeline-dot ev-timeline-dot-secondary"></div>
+                    <div class="ev-timeline-content">
+                        <div class="ev-timeline-date">19 Mayo, 2026</div>
+                        <h4 class="ev-timeline-name">Microsoft Build</h4>
+                        <p class="ev-timeline-location">Seattle, WA &middot; 9:00 AM PST</p>
+                        <p class="ev-timeline-desc">Desarrolladores exploran herramientas de IA y cloud de Microsoft.</p>
+                    </div>
+                </div>
+
+                <div class="ev-timeline-item">
+                    <div class="ev-timeline-dot ev-timeline-dot-tertiary"></div>
+                    <div class="ev-timeline-content">
+                        <div class="ev-timeline-date">8 Junio, 2026</div>
+                        <h4 class="ev-timeline-name">Apple WWDC</h4>
+                        <p class="ev-timeline-location">Cupertino, CA &middot; 10:00 AM PST</p>
+                        <p class="ev-timeline-desc">Presentacion de iOS 20, macOS y nuevas APIs para desarrolladores.</p>
+                    </div>
+                </div>
+
+                <div class="ev-timeline-item ev-timeline-item-right">
+                    <div class="ev-timeline-dot ev-timeline-dot-cyan"></div>
+                    <div class="ev-timeline-content">
+                        <div class="ev-timeline-date">2 Junio, 2026</div>
+                        <h4 class="ev-timeline-name">Computex</h4>
+                        <p class="ev-timeline-location">Taipei, Taiwan &middot; 9:00 AM CST</p>
+                        <p class="ev-timeline-desc">Nuevos procesadores, tarjetas graficas y componentes de ultima generacion.</p>
+                    </div>
+                </div>
+
+                <div class="ev-timeline-item">
+                    <div class="ev-timeline-dot ev-timeline-dot-rose"></div>
+                    <div class="ev-timeline-content">
+                        <div class="ev-timeline-date">20 Agosto, 2026</div>
+                        <h4 class="ev-timeline-name">Gamescom</h4>
+                        <p class="ev-timeline-location">Colonia, Alemania &middot; 10:00 AM CEST</p>
+                        <p class="ev-timeline-desc">Premieres mundiales de videojuegos y demos exclusivas de hardware.</p>
+                    </div>
+                </div>
+
+                <div class="ev-timeline-item ev-timeline-item-right">
+                    <div class="ev-timeline-dot ev-timeline-dot-primary"></div>
+                    <div class="ev-timeline-content">
+                        <div class="ev-timeline-date">3 Noviembre, 2026</div>
+                        <h4 class="ev-timeline-name">Web Summit</h4>
+                        <p class="ev-timeline-location">Lisboa, Portugal &middot; 9:00 AM WET</p>
+                        <p class="ev-timeline-desc">El summit tecnologico mas grande de Europa con 70k+ asistentes.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         SECTION 4 — SITIOS OFICIALES
+         ========================================== -->
+    <section class="ev-section ev-section-dark">
+        <div class="ev-container">
+            <div class="ev-section-header">
+                <h2 class="ev-section-title">Sitios Oficiales</h2>
+                <p class="ev-section-desc">Accede directamente a las paginas oficiales de los eventos</p>
+            </div>
+            <div class="ev-official-grid">
+
+                <div class="ev-official-card">
+                    <div class="ev-official-logo">
+                        <img src="../assets/img/eventos/event-ces.jpg" alt="CES">
+                    </div>
+                    <h4 class="ev-official-name">CES</h4>
+                    <p class="ev-official-desc">Consumer Electronics Show. La feria de consumo electronico mas importante.</p>
+                    <a href="https://www.ces.tech" target="_blank" rel="noopener" class="ev-official-btn">Visit Official Website</a>
+                </div>
+
+                <div class="ev-official-card">
+                    <div class="ev-official-logo">
+                        <img src="../assets/img/eventos/event-google-io.jpg" alt="Google I/O">
+                    </div>
+                    <h4 class="ev-official-name">Google I/O</h4>
+                    <p class="ev-official-desc">La conferencia anual de desarrolladores de Google.</p>
+                    <a href="https://io.google" target="_blank" rel="noopener" class="ev-official-btn">Visit Official Website</a>
+                </div>
+
+                <div class="ev-official-card">
+                    <div class="ev-official-logo">
+                        <img src="../assets/img/eventos/event-wwdc.jpg" alt="Apple WWDC">
+                    </div>
+                    <h4 class="ev-official-name">Apple WWDC</h4>
+                    <p class="ev-official-desc">Worldwide Developers Conference. El evento de Apple para devs.</p>
+                    <a href="https://developer.apple.com/wwdc/" target="_blank" rel="noopener" class="ev-official-btn">Visit Official Website</a>
+                </div>
+
+                <div class="ev-official-card">
+                    <div class="ev-official-logo">
+                        <img src="../assets/img/eventos/event-microsoft-build.jpg" alt="Microsoft Build">
+                    </div>
+                    <h4 class="ev-official-name">Microsoft Build</h4>
+                    <p class="ev-official-desc">La conferencia de desarrollo de Microsoft y Azure.</p>
+                    <a href="https://www.microsoft.com/build" target="_blank" rel="noopener" class="ev-official-btn">Visit Official Website</a>
+                </div>
+
+                <div class="ev-official-card">
+                    <div class="ev-official-logo">
+                        <img src="../assets/img/eventos/event-nvidia-gtc.jpg" alt="NVIDIA GTC">
+                    </div>
+                    <h4 class="ev-official-name">NVIDIA GTC</h4>
+                    <p class="ev-official-desc">GPU Technology Conference. IA y computacion acelerada.</p>
+                    <a href="https://www.nvidia.com/gtc" target="_blank" rel="noopener" class="ev-official-btn">Visit Official Website</a>
+                </div>
+
+                <div class="ev-official-card">
+                    <div class="ev-official-logo">
+                        <img src="../assets/img/eventos/event-computex.jpg" alt="Computex">
+                    </div>
+                    <h4 class="ev-official-name">Computex</h4>
+                    <p class="ev-official-desc">La expo de computadoras y tecnologia de Taipeí.</p>
+                    <a href="https://www.computextaipei.com.tw" target="_blank" rel="noopener" class="ev-official-btn">Visit Official Website</a>
+                </div>
+
+                <div class="ev-official-card">
+                    <div class="ev-official-logo">
+                        <img src="../assets/img/eventos/event-web-summit.jpg" alt="Web Summit">
+                    </div>
+                    <h4 class="ev-official-name">Web Summit</h4>
+                    <p class="ev-official-desc">El summit tecnologico mas grande de Europa.</p>
+                    <a href="https://websummit.com" target="_blank" rel="noopener" class="ev-official-btn">Visit Official Website</a>
+                </div>
+
+                <div class="ev-official-card">
+                    <div class="ev-official-logo">
+                        <img src="../assets/img/eventos/event-mwc.jpg" alt="MWC">
+                    </div>
+                    <h4 class="ev-official-name">Mobile World Congress</h4>
+                    <p class="ev-official-desc">El evento de movilidad mas importante del mundo.</p>
+                    <a href="https://www.mwcbarcelona.com" target="_blank" rel="noopener" class="ev-official-btn">Visit Official Website</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         SECTION 5 — CATEGORIAS DE EVENTOS
+         ========================================== -->
+    <section class="ev-section">
+        <div class="ev-container">
+            <div class="ev-section-header">
+                <h2 class="ev-section-title">Categorias de Eventos</h2>
+                <p class="ev-section-desc">Explora eventos por area de especializacion</p>
+            </div>
+            <div class="ev-categories-grid">
+
+                <div class="ev-category-card">
+                    <div class="ev-category-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a2 2 0 012 2c0 .74-.4 1.39-1 1.73V7h1a7 7 0 017 7h1a1 1 0 011 1v3a1 1 0 01-1 1h-1.27a7 7 0 01-6.73 5H7a7 7 0 01-6.73-5H0a1 1 0 01-1-1v-3a1 1 0 011-1h1a7 7 0 017-7h1V5.73c-.6-.34-1-.99-1-1.73a2 2 0 012-2zM7.5 13a1.5 1.5 0 100 3 1.5 1.5 0 000-3zm9 0a1.5 1.5 0 100 3 1.5 1.5 0 000-3z"/></svg>
+                    </div>
+                    <h4 class="ev-category-name">Inteligencia Artificial</h4>
+                    <span class="ev-category-count">48 eventos</span>
+                </div>
+
+                <div class="ev-category-card">
+                    <div class="ev-category-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                    </div>
+                    <h4 class="ev-category-name">Software Development</h4>
+                    <span class="ev-category-count">62 eventos</span>
+                </div>
+
+                <div class="ev-category-card">
+                    <div class="ev-category-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+                    </div>
+                    <h4 class="ev-category-name">Mobile Technology</h4>
+                    <span class="ev-category-count">35 eventos</span>
+                </div>
+
+                <div class="ev-category-card">
+                    <div class="ev-category-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="6" y1="11" x2="10" y2="11"/><line x1="8" y1="9" x2="8" y2="13"/><line x1="15" y1="12" x2="15.01" y2="12"/><line x1="18" y1="10" x2="18.01" y2="10"/><path d="M17.32 5H6.68a4 4 0 00-3.978 3.59c-.006.052-.01.101-.017.152C2.604 9.416 2 14.456 2 16a3 3 0 003 3c1.3 0 2.2-.6 3-1.5"/><path d="M18 14a3 3 0 110-6"/><path d="M22 12h.01"/></svg>
+                    </div>
+                    <h4 class="ev-category-name">Gaming</h4>
+                    <span class="ev-category-count">29 eventos</span>
+                </div>
+
+                <div class="ev-category-card">
+                    <div class="ev-category-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+                    </div>
+                    <h4 class="ev-category-name">Ciberseguridad</h4>
+                    <span class="ev-category-count">41 eventos</span>
+                </div>
+
+                <div class="ev-category-card">
+                    <div class="ev-category-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 10h-1.26A8 8 0 109 20h9a5 5 0 000-10z"/></svg>
+                    </div>
+                    <h4 class="ev-category-name">Cloud Computing</h4>
+                    <span class="ev-category-count">37 eventos</span>
+                </div>
+
+                <div class="ev-category-card">
+                    <div class="ev-category-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg>
+                    </div>
+                    <h4 class="ev-category-name">Consumer Electronics</h4>
+                    <span class="ev-category-count">53 eventos</span>
+                </div>
+
+                <div class="ev-category-card">
+                    <div class="ev-category-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-2 2 2 2 0 01-2-2v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83 0 2 2 0 010-2.83l.06-.06A1.65 1.65 0 004.68 15a1.65 1.65 0 00-1.51-1H3a2 2 0 01-2-2 2 2 0 012-2h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 010-2.83 2 2 0 012.83 0l.06.06A1.65 1.65 0 009 4.68a1.65 1.65 0 001-1.51V3a2 2 0 012-2 2 2 0 012 2v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 0 2 2 0 010 2.83l-.06.06A1.65 1.65 0 0019.4 9a1.65 1.65 0 001.51 1H21a2 2 0 012 2 2 2 0 01-2 2h-.09a1.65 1.65 0 00-1.51 1z"/></svg>
+                    </div>
+                    <h4 class="ev-category-name">Robotica</h4>
+                    <span class="ev-category-count">22 eventos</span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         SECTION 6 — ESTADISTICAS
+         ========================================== -->
+    <section class="ev-section ev-section-dark">
+        <div class="ev-container">
+            <div class="ev-section-header">
+                <h2 class="ev-section-title">Event Highlights</h2>
+                <p class="ev-section-desc">El impacto global de los eventos tecnologicos</p>
+            </div>
+            <div class="ev-stats-grid">
+                <div class="ev-stat-card">
+                    <span class="ev-stat-number ev-stat-number-primary">150+</span>
+                    <span class="ev-stat-label">Annual Events</span>
+                </div>
+                <div class="ev-stat-card">
+                    <span class="ev-stat-number ev-stat-number-cyan">60+</span>
+                    <span class="ev-stat-label">Countries</span>
+                </div>
+                <div class="ev-stat-card">
+                    <span class="ev-stat-number ev-stat-number-tertiary">500K+</span>
+                    <span class="ev-stat-label">Attendees</span>
+                </div>
+                <div class="ev-stat-card">
+                    <span class="ev-stat-number ev-stat-number-rose">1200+</span>
+                    <span class="ev-stat-label">Speakers</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         FOOTER
+         ========================================== -->
+    <footer class="cat-footer">
+        <div class="cat-footer-container">
+            <div class="cat-footer-grid">
+                <div class="cat-footer-brand">
+                    <img src="../assets/img/logo-sin-fondo.png" alt="Nexus Tech" class="cat-footer-logo">
+                    <p class="cat-footer-desc">El blog lider en tecnologia que te mantiene al dia con las ultimas tendencias, innovaciones y analisis del mundo tecnologico.</p>
+                    <div class="cat-social-links">
+                        <a href="https://twitter.com" class="cat-social-link" target="_blank" rel="noopener">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                        </a>
+                        <a href="https://github.com" class="cat-social-link" target="_blank" rel="noopener">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                        </a>
+                        <a href="https://instagram.com" class="cat-social-link" target="_blank" rel="noopener">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.643.069 4.849 0 3.204-.012 3.584-.069 4.849-.148 3.228-1.667 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.252-.148-4.771-1.691-4.919-4.919-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.584.07-4.849.148-3.228 1.667-4.771 4.919-4.919 1.266-.057 1.644-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.072 1.687-.072 4.947 0 3.259.014 3.668.072 4.947.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.358-.2 6.78-2.618 6.98-6.98.059-1.28.072-1.689.072-4.948 0-3.259-.013-3.668-.072-4.948-.2-4.358-2.618-6.78-6.98-6.98C15.668 2.177 15.261 2.163 12 2.163zm0 5.838c-3.403 0-6.167 2.764-6.167 6.167s2.764 6.167 6.167 6.167 6.167-2.764 6.167-6.167S15.403 8.001 12 8.001zm0 10.166c-2.209 0-4-1.791-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44 0 .795.645 1.44 1.441 1.44.795 0 1.439-.645 1.439-1.44 0-.795-.644-1.44-1.439-1.44z"/></svg>
+                        </a>
+                        <a href="https://youtube.com" class="cat-social-link" target="_blank" rel="noopener">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="cat-footer-section-title">Enlaces rapidos</h3>
+                    <ul class="cat-footer-links">
+                        <li><a href="../index.html" class="cat-footer-link">Inicio</a></li>
+                        <li><a href="categorias.html" class="cat-footer-link">Categorias</a></li>
+                        <li><a href="resenas.html" class="cat-footer-link">Resenas</a></li>
+                        <li><a href="comunidad.html" class="cat-footer-link">Comunidad</a></li>
+                        <li><a href="eventos.html" class="cat-footer-link">Eventos</a></li>
+                        <li><a href="contacto.html" class="cat-footer-link">Contacto</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="cat-footer-section-title">Categorias populares</h3>
+                    <ul class="cat-footer-links">
+                        <li><a href="#" class="cat-footer-link">Inteligencia Artificial</a></li>
+                        <li><a href="#" class="cat-footer-link">Ciberseguridad</a></li>
+                        <li><a href="#" class="cat-footer-link">Gadgets</a></li>
+                        <li><a href="#" class="cat-footer-link">Realidad Virtual</a></li>
+                        <li><a href="#" class="cat-footer-link">Cloud Computing</a></li>
+                        <li><a href="#" class="cat-footer-link">Desarrollo</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="cat-footer-section-title">Contacto</h3>
+                    <div class="cat-footer-contact">
+                        <div class="cat-footer-contact-item">
+                            <svg class="cat-footer-contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                            <span>contacto@nexustech.com</span>
+                        </div>
+                        <div class="cat-footer-contact-item">
+                            <svg class="cat-footer-contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.64-3.49 19.79 19.79 0 01-6-6 19.79 19.79 0 01-3.49-8.64A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
+                            </svg>
+                            <span>+57 300 123 4567</span>
+                        </div>
+                        <div class="cat-footer-contact-item">
+                            <svg class="cat-footer-contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                            <span>Bucaramanga, Colombia</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cat-footer-bottom">
+                <p class="cat-footer-copyright">&copy; 2026 Nexus Tech. Todos los derechos reservados.</p>
+                <div class="cat-footer-bottom-links">
+                    <a href="#">Politica de privacidad</a>
+                    <a href="#">Terminos de uso</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
