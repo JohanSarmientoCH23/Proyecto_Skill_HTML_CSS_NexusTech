@@ -1,0 +1,1105 @@
+/* ==========================================
+   REVIEWS.CSS - Estilos de la pagina de Resenas
+   ========================================== */
+
+/* ==========================================
+   KEYFRAMES
+   ========================================== */
+
+@keyframes rvFadeUp {
+    0% { opacity: 0; transform: translateY(30px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes rvFadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes rvScaleIn {
+    0% { opacity: 0; transform: scale(0.9); }
+    100% { opacity: 1; transform: scale(1); }
+}
+
+@keyframes rvSlideRight {
+    0% { width: 0; }
+    100% { width: 96px; }
+}
+
+@keyframes rvPulse {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(99, 102, 241, 0.4); }
+    50% { box-shadow: 0 0 0 8px rgba(99, 102, 241, 0); }
+}
+
+@keyframes rvGlow {
+    0%, 100% { text-shadow: 0 0 20px rgba(195, 192, 255, 0.3); }
+    50% { text-shadow: 0 0 40px rgba(195, 192, 255, 0.6), 0 0 80px rgba(99, 102, 241, 0.2); }
+}
+
+@keyframes rvGridMove {
+    0% { transform: translate(0, 0); }
+    100% { transform: translate(60px, 60px); }
+}
+
+@keyframes rvShine {
+    0% { left: -100%; }
+    100% { left: 200%; }
+}
+
+@keyframes rvStarPop {
+    0% { transform: translate(-50%, -50%) scale(0.5); }
+    50% { transform: translate(-50%, -50%) scale(1.3); }
+    100% { transform: translate(-50%, -50%) scale(1); }
+}
+
+@keyframes rvQuoteFloat {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-6px); }
+}
+
+@keyframes rvBarGrow {
+    0% { width: 0; }
+}
+
+@keyframes rvGradientBorder {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+@keyframes rvParticleFloat {
+    0%, 100% { transform: translateY(0) translateX(0); opacity: 0; }
+    10% { opacity: 0.6; }
+    90% { opacity: 0.6; }
+    50% { transform: translateY(-60px) translateX(20px); }
+}
+
+@keyframes rvBorderGlow {
+    0%, 100% { border-color: rgba(255, 255, 255, 0.08); }
+    50% { border-color: rgba(195, 192, 255, 0.3); }
+}
+
+/* ==========================================
+   HERO
+   ========================================== */
+
+.rv-hero {
+    position: relative;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 160px 40px 80px;
+    overflow: hidden;
+}
+
+.rv-hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 50% 0%, rgba(29, 27, 75, 0.6) 0%, #0a0f1e 100%);
+    z-index: 0;
+}
+
+.rv-hero-bg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'%3E%3Cg fill='none' stroke='%236366f1' stroke-width='0.5' opacity='0.08'%3E%3Cpath d='M30 10 L20 20 L30 30 L40 20 Z'/%3E%3Cpath d='M10 30 L20 20 L30 30 L20 40 Z'/%3E%3Cpath d='M50 30 L40 20 L30 30 L40 40 Z'/%3E%3C/g%3E%3C/svg%3E") repeat;
+    animation: rvGridMove 30s linear infinite;
+}
+
+.rv-hero-bg::after {
+    content: '';
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(99, 102, 241, 0.12) 0%, transparent 70%);
+    border-radius: 50%;
+    filter: blur(60px);
+    animation: rvPulse 6s ease-in-out infinite;
+}
+
+.rv-hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+}
+
+.rv-hero-label {
+    display: inline-block;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 12px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #06b6d4;
+    margin-bottom: 16px;
+    padding: 6px 16px;
+    background: rgba(6, 182, 212, 0.1);
+    border: 1px solid rgba(6, 182, 212, 0.2);
+    border-radius: 9999px;
+    opacity: 0;
+    animation: rvFadeUp 0.8s ease-out 0.2s forwards;
+}
+
+.rv-hero-title {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: clamp(36px, 5vw, 64px);
+    line-height: 1.1;
+    font-weight: 700;
+    color: #dbe2fd;
+    margin-bottom: 24px;
+    animation: rvGlow 4s ease-in-out infinite, rvFadeUp 0.8s ease-out 0.4s forwards;
+    opacity: 0;
+}
+
+.rv-hero-desc {
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #94a3b8;
+    max-width: 700px;
+    margin: 0 auto;
+    opacity: 0;
+    animation: rvFadeUp 0.8s ease-out 0.6s forwards;
+}
+
+/* Particulas del hero */
+.rv-hero-particles {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.rv-particle {
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    background: #818cf8;
+    border-radius: 50%;
+    opacity: 0;
+    animation: rvParticleFloat 6s ease-in-out infinite;
+}
+
+.rv-particle:nth-child(1) { top: 20%; left: 10%; animation-delay: 0s; }
+.rv-particle:nth-child(2) { top: 60%; left: 85%; animation-delay: 1.5s; }
+.rv-particle:nth-child(3) { top: 40%; left: 25%; animation-delay: 3s; }
+.rv-particle:nth-child(4) { top: 75%; left: 70%; animation-delay: 0.8s; }
+.rv-particle:nth-child(5) { top: 30%; left: 90%; animation-delay: 2.2s; }
+.rv-particle:nth-child(6) { top: 85%; left: 15%; animation-delay: 4s; }
+
+/* ==========================================
+   SECCIONES - CONTENEDOR COMUN
+   ========================================== */
+
+.rv-section {
+    padding: 48px 40px;
+}
+
+.rv-container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.rv-container-narrow {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.rv-section-header {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    margin-bottom: 32px;
+}
+
+.rv-section-header-center {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.rv-section-title {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 28px;
+    line-height: 1.3;
+    font-weight: 600;
+    color: #dbe2fd;
+}
+
+.rv-section-subtitle {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #94a3b8;
+    margin-top: 12px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.rv-section-line {
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(to right, rgba(255,255,255,0.08), transparent);
+}
+
+.rv-section-accent-line {
+    width: 0;
+    height: 4px;
+    background: linear-gradient(to right, #6366f1, #06b6d4);
+    border-radius: 4px;
+    margin: 16px auto 0;
+    animation: rvSlideRight 0.8s ease-out 0.5s forwards;
+}
+
+/* ==========================================
+   FEATURED REVIEWS - GRID
+   ========================================== */
+
+.rv-grid-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.rv-grid-3 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+/* ==========================================
+   TARJETA DE PRODUCTO
+   ========================================== */
+
+.rv-card {
+    background: rgba(23, 31, 51, 0.4);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 0;
+    animation: rvFadeUp 0.6s ease-out forwards;
+    position: relative;
+}
+
+.rv-card:nth-child(1) { animation-delay: 0.1s; }
+.rv-card:nth-child(2) { animation-delay: 0.2s; }
+.rv-card:nth-child(3) { animation-delay: 0.3s; }
+.rv-card:nth-child(4) { animation-delay: 0.4s; }
+
+.rv-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.03), transparent);
+    transition: 0.6s;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.rv-card:hover::before {
+    left: 200%;
+}
+
+.rv-card:hover {
+    border-color: rgba(195, 192, 255, 0.5);
+    box-shadow: 0 0 30px rgba(195, 192, 255, 0.12), 0 20px 40px rgba(0, 0, 0, 0.3);
+    transform: translateY(-8px);
+}
+
+.rv-card-img {
+    position: relative;
+    width: 100%;
+    height: 256px;
+    overflow: hidden;
+}
+
+.rv-card-img::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(to top, rgba(23, 31, 51, 0.8), transparent);
+    z-index: 1;
+}
+
+.rv-card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.rv-card:hover .rv-card-img img {
+    transform: scale(1.1);
+}
+
+.rv-card-score {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    padding: 4px 12px;
+    background: rgba(99, 102, 241, 0.25);
+    backdrop-filter: blur(8px);
+    color: #c3c0ff;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 12px;
+    font-weight: 700;
+    border-radius: 9999px;
+    border: 1px solid rgba(99, 102, 241, 0.4);
+    z-index: 2;
+    animation: rvPulse 3s ease-in-out infinite;
+}
+
+.rv-score-tertiary {
+    background: rgba(221, 183, 255, 0.25);
+    color: #ddb7ff;
+    border-color: rgba(221, 183, 255, 0.4);
+    animation-delay: 1s;
+}
+
+.rv-score-cyan {
+    background: rgba(6, 182, 212, 0.25);
+    color: #06b6d4;
+    border-color: rgba(6, 182, 212, 0.4);
+    animation-delay: 2s;
+}
+
+.rv-card-body {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.rv-card-category {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 11px;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+    margin-bottom: 4px;
+    text-transform: uppercase;
+}
+
+.rv-cat-laptops { color: #06b6d4; }
+.rv-cat-audio { color: #ddb7ff; }
+.rv-cat-display { color: #c3c0ff; }
+.rv-cat-imagen { color: #06b6d4; }
+
+.rv-card-name {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #dbe2fd;
+    margin-bottom: 2px;
+    transition: color 0.2s ease;
+}
+
+.rv-card:hover .rv-card-name {
+    color: #c3c0ff;
+}
+
+.rv-card-model {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 12px;
+    color: rgba(148, 163, 184, 0.6);
+    font-style: italic;
+    margin-bottom: 12px;
+}
+
+.rv-card-desc {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #94a3b8;
+    margin-bottom: 20px;
+    flex: 1;
+}
+
+.rv-card-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    padding: 12px;
+    background: rgba(34, 42, 62, 1);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    color: #dbe2fd;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.rv-card-btn:hover {
+    border-color: #c3c0ff;
+    color: #c3c0ff;
+    background: rgba(99, 102, 241, 0.1);
+    box-shadow: 0 0 15px rgba(99, 102, 241, 0.15);
+}
+
+/* ==========================================
+   ESTRELLAS
+   ========================================== */
+
+.rv-stars {
+    display: flex;
+    gap: 2px;
+    margin-bottom: 16px;
+}
+
+.rv-star {
+    width: 18px;
+    height: 18px;
+    border-radius: 3px;
+    background: rgba(148, 163, 184, 0.2);
+    position: relative;
+    transition: transform 0.2s ease;
+}
+
+.rv-star:hover {
+    transform: scale(1.2);
+}
+
+.rv-star::after {
+    content: '\2605';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 14px;
+    color: rgba(148, 163, 184, 0.3);
+}
+
+.rv-star.filled {
+    animation: rvStarPop 0.3s ease-out;
+}
+
+.rv-star.filled::after {
+    color: #06b6d4;
+}
+
+.rv-star.half {
+    background: linear-gradient(to right, #06b6d4 50%, rgba(148, 163, 184, 0.2) 50%);
+}
+
+.rv-star.half::after {
+    color: #06b6d4;
+}
+
+.rv-star-sm {
+    width: 16px;
+    height: 16px;
+    border-radius: 3px;
+    background: rgba(148, 163, 184, 0.2);
+    position: relative;
+    display: inline-block;
+    transition: transform 0.2s ease;
+}
+
+.rv-star-sm:hover {
+    transform: scale(1.2);
+}
+
+.rv-star-sm::after {
+    content: '\2605';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 12px;
+    color: rgba(148, 163, 184, 0.3);
+}
+
+.rv-star-sm.filled::after {
+    color: #c3c0ff;
+}
+
+.rv-star-sm.half {
+    background: linear-gradient(to right, #c3c0ff 50%, rgba(148, 163, 184, 0.2) 50%);
+}
+
+.rv-star-sm.half::after {
+    color: #c3c0ff;
+}
+
+/* ==========================================
+   TABLA COMPARATIVA
+   ========================================== */
+
+.rv-table-wrapper {
+    background: rgba(23, 31, 51, 0.4);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    overflow: hidden;
+    overflow-x: auto;
+    opacity: 0;
+    animation: rvFadeUp 0.8s ease-out 0.3s forwards;
+}
+
+.rv-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.rv-table thead tr {
+    background: rgba(34, 42, 62, 0.5);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.rv-table th {
+    padding: 20px 24px;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    color: #c3c0ff;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    white-space: nowrap;
+}
+
+.rv-table td {
+    padding: 20px 24px;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 13px;
+    color: #94a3b8;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+    transition: color 0.2s ease;
+}
+
+.rv-table tbody tr {
+    transition: all 0.3s ease;
+}
+
+.rv-table tbody tr:hover {
+    background: rgba(99, 102, 241, 0.06);
+}
+
+.rv-table tbody tr:hover td {
+    color: #dbe2fd;
+}
+
+.rv-table-product {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    color: #dbe2fd;
+}
+
+.rv-table-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background: rgba(45, 52, 73, 1);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+}
+
+.rv-table tbody tr:hover .rv-table-icon {
+    border-color: rgba(195, 192, 255, 0.3);
+    box-shadow: 0 0 12px rgba(99, 102, 241, 0.2);
+}
+
+.rv-table-price {
+    color: #06b6d4;
+    font-weight: 700;
+}
+
+.rv-table-rating {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.rv-rating-bar {
+    width: 48px;
+    height: 6px;
+    background: rgba(45, 52, 73, 1);
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.rv-rating-fill {
+    height: 100%;
+    background: linear-gradient(to right, #6366f1, #818cf8);
+    border-radius: 3px;
+    animation: rvBarGrow 1s ease-out 0.5s both;
+}
+
+.rv-rating-num {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 12px;
+    color: #c3c0ff;
+    font-weight: 700;
+}
+
+/* ==========================================
+   FORMULARIO
+   ========================================== */
+
+.rv-form {
+    background: rgba(23, 31, 51, 0.4);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    padding: 40px;
+    opacity: 0;
+    animation: rvFadeUp 0.8s ease-out 0.2s forwards;
+    position: relative;
+    overflow: hidden;
+}
+
+.rv-form::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(45deg, transparent, rgba(99, 102, 241, 0.1), transparent, rgba(6, 182, 212, 0.1), transparent);
+    background-size: 400% 400%;
+    border-radius: 17px;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.rv-form:hover::before {
+    opacity: 1;
+    animation: rvGradientBorder 6s ease infinite;
+}
+
+.rv-form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+.rv-form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.rv-form-group:last-child {
+    margin-bottom: 0;
+}
+
+.rv-form-label {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 12px;
+    letter-spacing: 0.05em;
+    color: #94a3b8;
+    text-transform: uppercase;
+    transition: color 0.2s ease;
+}
+
+.rv-form-group:focus-within .rv-form-label {
+    color: #c3c0ff;
+}
+
+.rv-form-input {
+    padding: 12px 16px;
+    background: rgba(34, 42, 62, 1);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+    color: #dbe2fd;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    outline: none;
+    width: 100%;
+}
+
+.rv-form-input::placeholder {
+    color: rgba(148, 163, 184, 0.5);
+}
+
+.rv-form-input:focus {
+    border-color: #c3c0ff;
+    box-shadow: 0 0 0 3px rgba(195, 192, 255, 0.1), 0 0 20px rgba(99, 102, 241, 0.1);
+    background: rgba(34, 42, 62, 0.8);
+}
+
+select.rv-form-input {
+    appearance: none;
+    -webkit-appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%2394a3b8' stroke-width='2'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    padding-right: 36px;
+    cursor: pointer;
+}
+
+select.rv-form-input option {
+    background: #1a2236;
+    color: #dbe2fd;
+}
+
+.rv-form-textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.rv-form-stars {
+    display: flex;
+    gap: 4px;
+    padding-top: 4px;
+}
+
+.rv-form-star {
+    width: 28px;
+    height: 28px;
+    border-radius: 6px;
+    background: rgba(34, 42, 62, 1);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.rv-form-star::after {
+    content: '\2605';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+    color: rgba(148, 163, 184, 0.3);
+    transition: all 0.2s ease;
+}
+
+.rv-form-star:hover {
+    border-color: #c3c0ff;
+    transform: scale(1.15);
+    box-shadow: 0 0 12px rgba(195, 192, 255, 0.3);
+}
+
+.rv-form-star:hover::after {
+    color: #c3c0ff;
+}
+
+.rv-form-submit {
+    width: 100%;
+    padding: 14px 32px;
+    background: linear-gradient(135deg, #6366f1, #4f46e5);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 24px;
+    position: relative;
+    overflow: hidden;
+}
+
+.rv-form-submit::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    transition: 0.5s;
+}
+
+.rv-form-submit:hover {
+    background: linear-gradient(135deg, #818cf8, #6366f1);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(99, 102, 241, 0.5);
+}
+
+.rv-form-submit:hover::before {
+    left: 100%;
+}
+
+.rv-form-submit:active {
+    transform: translateY(0);
+}
+
+/* ==========================================
+   RESEÑAS DE USUARIOS
+   ========================================== */
+
+.rv-review-card {
+    background: rgba(23, 31, 51, 0.4);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    padding: 32px;
+    position: relative;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 0;
+    animation: rvFadeUp 0.6s ease-out forwards;
+}
+
+.rv-review-card:nth-child(1) { animation-delay: 0.1s; }
+.rv-review-card:nth-child(2) { animation-delay: 0.2s; }
+.rv-review-card:nth-child(3) { animation-delay: 0.3s; }
+.rv-review-card:nth-child(4) { animation-delay: 0.4s; }
+
+.rv-review-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3px;
+    height: 0;
+    background: linear-gradient(to bottom, #6366f1, #06b6d4);
+    border-radius: 16px 0 0 16px;
+    transition: height 0.4s ease;
+}
+
+.rv-review-card:hover::before {
+    height: 100%;
+}
+
+.rv-review-card:hover {
+    border-color: rgba(195, 192, 255, 0.3);
+    transform: translateY(-6px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+.rv-review-quote {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 72px;
+    line-height: 1;
+    color: rgba(99, 102, 241, 0.15);
+    position: absolute;
+    top: 16px;
+    right: 24px;
+    animation: rvQuoteFloat 4s ease-in-out infinite;
+}
+
+.rv-quote-cyan { color: rgba(6, 182, 212, 0.15); }
+.rv-quote-tertiary { color: rgba(221, 183, 255, 0.15); }
+
+.rv-review-card:nth-child(2) .rv-review-quote { animation-delay: 1s; }
+.rv-review-card:nth-child(3) .rv-review-quote { animation-delay: 2s; }
+.rv-review-card:nth-child(4) .rv-review-quote { animation-delay: 0.5s; }
+
+.rv-review-user {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.rv-review-avatar {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid #6366f1;
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+}
+
+.rv-review-card:hover .rv-review-avatar {
+    border-color: #818cf8;
+    box-shadow: 0 0 15px rgba(99, 102, 241, 0.3);
+}
+
+.rv-review-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.rv-review-card:hover .rv-review-avatar img {
+    transform: scale(1.1);
+}
+
+.rv-avatar-cyan { border-color: #06b6d4; }
+.rv-avatar-tertiary { border-color: #ddb7ff; }
+
+.rv-review-card:hover .rv-avatar-cyan {
+    border-color: #22d3ee;
+    box-shadow: 0 0 15px rgba(6, 182, 212, 0.3);
+}
+
+.rv-review-card:hover .rv-avatar-tertiary {
+    border-color: #e9d5ff;
+    box-shadow: 0 0 15px rgba(221, 183, 255, 0.3);
+}
+
+.rv-review-name {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #dbe2fd;
+    margin-bottom: 2px;
+}
+
+.rv-review-role {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 11px;
+}
+
+.rv-role-primary { color: #c3c0ff; }
+.rv-role-cyan { color: #06b6d4; }
+.rv-role-tertiary { color: #ddb7ff; }
+
+.rv-review-text {
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    line-height: 1.7;
+    color: #94a3b8;
+    font-style: italic;
+    margin-bottom: 20px;
+    transition: color 0.3s ease;
+}
+
+.rv-review-card:hover .rv-review-text {
+    color: #cbd5e1;
+}
+
+.rv-review-stars {
+    display: flex;
+    gap: 4px;
+}
+
+/* ==========================================
+   RESPONSIVE
+   ========================================== */
+
+@media (max-width: 1200px) {
+    .rv-grid-4 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 1024px) {
+    .rv-hero {
+        padding: 140px 32px 60px;
+    }
+
+    .rv-section {
+        padding: 40px 32px;
+    }
+
+    .rv-form {
+        padding: 32px;
+    }
+}
+
+@media (max-width: 768px) {
+    .rv-hero {
+        min-height: 400px;
+        padding: 120px 16px 60px;
+    }
+
+    .rv-hero-desc {
+        font-size: 16px;
+    }
+
+    .rv-section {
+        padding: 32px 16px;
+    }
+
+    .rv-grid-4 {
+        grid-template-columns: 1fr;
+    }
+
+    .rv-grid-3 {
+        grid-template-columns: 1fr;
+    }
+
+    .rv-section-header {
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+    }
+
+    .rv-section-line {
+        width: 60px;
+        flex: none;
+    }
+
+    .rv-form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .rv-form {
+        padding: 24px 16px;
+    }
+
+    .rv-review-card {
+        padding: 24px;
+    }
+
+    .rv-table {
+        font-size: 12px;
+    }
+
+    .rv-table th,
+    .rv-table td {
+        padding: 14px 16px;
+    }
+
+    .rv-table-product {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+    }
+
+    .rv-particle {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .rv-hero-title {
+        font-size: 32px;
+    }
+
+    .rv-section-title {
+        font-size: 24px;
+    }
+
+    .rv-card-body {
+        padding: 20px;
+    }
+
+    .rv-review-quote {
+        font-size: 48px;
+    }
+}
