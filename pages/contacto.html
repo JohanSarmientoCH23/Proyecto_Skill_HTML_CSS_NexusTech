@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Nexus Tech</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/layout.css">
+    <link rel="stylesheet" href="../assets/css/components.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link rel="stylesheet" href="../assets/css/contact.css">
+</head>
+<body>
+    <input type="checkbox" id="nav-toggle" class="cat-nav-toggle">
+    <header class="cat-header">
+        <div class="cat-header-container">
+            <div class="cat-logo">
+                <a href="../index.html"><img src="../assets/img/logo-sin-fondo.png" alt="Nexus Tech"></a>
+            </div>
+            <label for="nav-toggle" class="cat-hamburger" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+    </header>
+    <nav class="cat-nav">
+        <ul class="cat-nav-list">
+            <li><a href="../index.html" class="cat-nav-link">Inicio</a></li>
+            <li><a href="categorias.html" class="cat-nav-link">Categorias</a></li>
+            <li><a href="resenas.html" class="cat-nav-link">Resenas</a></li>
+            <li><a href="comunidad.html" class="cat-nav-link">Comunidad</a></li>
+            <li><a href="eventos.html" class="cat-nav-link">Eventos</a></li>
+            <li><a href="contacto.html" class="cat-nav-link">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- ==========================================
+         HERO
+         ========================================== -->
+    <section class="ct-hero">
+        <div class="ct-hero-bg">
+            <img src="../assets/img/contact-hero.jpg" alt="Contacto Nexus Tech">
+        </div>
+        <div class="ct-hero-content">
+            <span class="ct-hero-label">Hablemos del futuro</span>
+            <h1 class="ct-hero-title">Conectate con Nexus</h1>
+            <p class="ct-hero-desc">Tienes una idea revolucionaria o una consulta tecnica? Nuestro equipo de expertos esta listo para colaborar contigo en la frontera de la innovacion tecnologica.</p>
+            <div class="ct-hero-actions">
+                <a href="#form" class="ct-btn-primary">Enviar Mensaje</a>
+                <a href="#info" class="ct-btn-secondary">Ver Informacion</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         SECTION 1 — FORMULARIO + INFORMACION
+         ========================================== -->
+    <section class="ct-section">
+        <div class="ct-container">
+            <div class="ct-contact-grid">
+
+                <!-- Contact Form -->
+                <div class="ct-form-wrapper" id="form">
+                    <h2 class="ct-form-title">Envianos un mensaje</h2>
+                    <form class="ct-form" action="#" method="post">
+                        <div class="ct-form-row">
+                            <div class="ct-form-group">
+                                <label for="ct-name" class="ct-form-label">Nombre Completo</label>
+                                <input type="text" id="ct-name" class="ct-form-input" placeholder="Tu nombre" required>
+                                <span class="ct-form-msg ct-form-msg-error">El nombre es obligatorio</span>
+                            </div>
+                            <div class="ct-form-group">
+                                <label for="ct-email" class="ct-form-label">Correo Electronico</label>
+                                <input type="email" id="ct-email" class="ct-form-input" placeholder="ejemplo@nexus.tech" required>
+                                <span class="ct-form-msg ct-form-msg-error">Ingresa un email valido</span>
+                            </div>
+                        </div>
+                        <div class="ct-form-group">
+                            <label for="ct-subject" class="ct-form-label">Asunto</label>
+                            <select id="ct-subject" class="ct-form-select" required>
+                                <option value="" disabled selected>Selecciona un asunto</option>
+                                <option value="general">Consulta General</option>
+                                <option value="soporte">Soporte Tecnico</option>
+                                <option value="colaboracion">Colaboraciones</option>
+                                <option value="prensa">Prensa / Medios</option>
+                            </select>
+                        </div>
+                        <div class="ct-form-group">
+                            <label for="ct-message" class="ct-form-label">Mensaje</label>
+                            <textarea id="ct-message" class="ct-form-textarea" rows="6" placeholder="Cuentanos en que podemos ayudarte..." required></textarea>
+                            <span class="ct-form-msg ct-form-msg-error">El mensaje es obligatorio</span>
+                        </div>
+                        <button type="submit" class="ct-form-submit">
+                            <span>Enviar Mensaje</span>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Info Column -->
+                <div class="ct-info-column">
+
+                    <!-- Contact Info Card -->
+                    <div class="ct-info-card" id="info">
+                        <h3 class="ct-info-card-title">Datos de Contacto</h3>
+
+                        <div class="ct-info-item">
+                            <div class="ct-info-icon ct-info-icon-primary">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                            </div>
+                            <div>
+                                <p class="ct-info-label">Correo Electronico</p>
+                                <p class="ct-info-text">hello@nexustech.media</p>
+                            </div>
+                        </div>
+
+                        <div class="ct-info-item">
+                            <div class="ct-info-icon ct-info-icon-secondary">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.64-3.49 19.79 19.79 0 01-6-6 19.79 19.79 0 01-3.49-8.64A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+                            </div>
+                            <div>
+                                <p class="ct-info-label">Telefono</p>
+                                <p class="ct-info-text">+57 300 123 4567</p>
+                            </div>
+                        </div>
+
+                        <div class="ct-info-item">
+                            <div class="ct-info-icon ct-info-icon-tertiary">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            </div>
+                            <div>
+                                <p class="ct-info-label">Ubicacion</p>
+                                <p class="ct-info-text">Bucaramanga, Colombia</p>
+                            </div>
+                        </div>
+
+                        <div class="ct-info-item">
+                            <div class="ct-info-icon ct-info-icon-cyan">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                            </div>
+                            <div>
+                                <p class="ct-info-label">Horario</p>
+                                <p class="ct-info-text">Lun - Vie, 9:00 AM - 6:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Map Card -->
+                    <div class="ct-map-card">
+                        <div class="ct-map-overlay">
+                            <p class="ct-map-label">NEXUS HQ</p>
+                            <p class="ct-map-sublabel">Centro Tecnologico, Bucaramanga</p>
+                        </div>
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3977.123456789!2d-73.1225!3d7.1193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zN8KwMDcnMDkuNSJOIDczwrAwNzIxLjAiVw!5e0!3m2!1ses!2sco!4v1234567890" 
+                            width="100%" 
+                            height="100%" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade"
+                            class="ct-map-iframe">
+                        </iframe>
+                    </div>
+
+                    <!-- Social Media -->
+                    <div class="ct-social-inline">
+                        <p class="ct-social-inline-label">Siguenos en redes</p>
+                        <div class="ct-social-inline-row">
+                            <a href="#" class="ct-social-btn ct-social-btn-twitter" target="_blank" rel="noopener" title="X (Twitter)">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                            </a>
+                            <a href="#" class="ct-social-btn ct-social-btn-instagram" target="_blank" rel="noopener" title="Instagram">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+                            </a>
+                            <a href="#" class="ct-social-btn ct-social-btn-linkedin" target="_blank" rel="noopener" title="LinkedIn">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                            </a>
+                            <a href="#" class="ct-social-btn ct-social-btn-github" target="_blank" rel="noopener" title="GitHub">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                            </a>
+                            <a href="#" class="ct-social-btn ct-social-btn-youtube" target="_blank" rel="noopener" title="YouTube">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         FOOTER
+         ========================================== -->
+    <footer class="cat-footer">
+        <div class="cat-footer-container">
+            <div class="cat-footer-grid">
+                <div class="cat-footer-brand">
+                    <img src="../assets/img/logo-sin-fondo.png" alt="Nexus Tech" class="cat-footer-logo">
+                    <p class="cat-footer-desc">El blog lider en tecnologia que te mantiene al dia con las ultimas tendencias, innovaciones y analisis del mundo tecnologico.</p>
+                    <div class="cat-social-links">
+                        <a href="https://twitter.com" class="cat-social-link" target="_blank" rel="noopener">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                        </a>
+                        <a href="https://github.com" class="cat-social-link" target="_blank" rel="noopener">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                        </a>
+                        <a href="https://instagram.com" class="cat-social-link" target="_blank" rel="noopener">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.643.069 4.849 0 3.204-.012 3.584-.069 4.849-.148 3.228-1.667 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.252-.148-4.771-1.691-4.919-4.919-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.584.07-4.849.148-3.228 1.667-4.771 4.919-4.919 1.266-.057 1.644-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.072 1.687-.072 4.947 0 3.259.014 3.668.072 4.947.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.358-.2 6.78-2.618 6.98-6.98.059-1.28.072-1.689.072-4.948 0-3.259-.013-3.668-.072-4.948-.2-4.358-2.618-6.78-6.98-6.98C15.668 2.177 15.261 2.163 12 2.163zm0 5.838c-3.403 0-6.167 2.764-6.167 6.167s2.764 6.167 6.167 6.167 6.167-2.764 6.167-6.167S15.403 8.001 12 8.001zm0 10.166c-2.209 0-4-1.791-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44 0 .795.645 1.44 1.441 1.44.795 0 1.439-.645 1.439-1.44 0-.795-.644-1.44-1.439-1.44z"/></svg>
+                        </a>
+                        <a href="https://youtube.com" class="cat-social-link" target="_blank" rel="noopener">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="cat-footer-section-title">Enlaces rapidos</h3>
+                    <ul class="cat-footer-links">
+                        <li><a href="../index.html" class="cat-footer-link">Inicio</a></li>
+                        <li><a href="categorias.html" class="cat-footer-link">Categorias</a></li>
+                        <li><a href="resenas.html" class="cat-footer-link">Resenas</a></li>
+                        <li><a href="comunidad.html" class="cat-footer-link">Comunidad</a></li>
+                        <li><a href="eventos.html" class="cat-footer-link">Eventos</a></li>
+                        <li><a href="contacto.html" class="cat-footer-link">Contacto</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="cat-footer-section-title">Categorias populares</h3>
+                    <ul class="cat-footer-links">
+                        <li><a href="#" class="cat-footer-link">Inteligencia Artificial</a></li>
+                        <li><a href="#" class="cat-footer-link">Ciberseguridad</a></li>
+                        <li><a href="#" class="cat-footer-link">Gadgets</a></li>
+                        <li><a href="#" class="cat-footer-link">Realidad Virtual</a></li>
+                        <li><a href="#" class="cat-footer-link">Cloud Computing</a></li>
+                        <li><a href="#" class="cat-footer-link">Desarrollo</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="cat-footer-section-title">Contacto</h3>
+                    <div class="cat-footer-contact">
+                        <div class="cat-footer-contact-item">
+                            <svg class="cat-footer-contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                            <span>contacto@nexustech.com</span>
+                        </div>
+                        <div class="cat-footer-contact-item">
+                            <svg class="cat-footer-contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.64-3.49 19.79 19.79 0 01-6-6 19.79 19.79 0 01-3.49-8.64A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
+                            </svg>
+                            <span>+57 300 123 4567</span>
+                        </div>
+                        <div class="cat-footer-contact-item">
+                            <svg class="cat-footer-contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                            <span>Bucaramanga, Colombia</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cat-footer-bottom">
+                <p class="cat-footer-copyright">&copy; 2026 Nexus Tech. Todos los derechos reservados.</p>
+                <div class="cat-footer-bottom-links">
+                    <a href="#">Politica de privacidad</a>
+                    <a href="#">Terminos de uso</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
