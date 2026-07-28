@@ -1,0 +1,216 @@
+/* ==========================================
+   FILTERS.CSS - Filtrado solo con CSS
+   Los radios deben ser hermanos directos de .articles-grid
+   ========================================== */
+
+/* Ocultar radios de filtro */
+input[name="category"],
+input[name="time"][id^="time-"] {
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+/* ==========================================
+   FILTRADO POR CATEGORIA
+   ========================================== */
+
+/* Todas: mostrar todo */
+#cat-all:checked ~ .articles-grid .article-card { display: block; }
+
+/* IA */
+#cat-ia:checked ~ .articles-grid .article-card { display: none; }
+#cat-ia:checked ~ .articles-grid .article-card.cat-ia { display: block; }
+
+/* Gadgets */
+#cat-gadgets:checked ~ .articles-grid .article-card { display: none; }
+#cat-gadgets:checked ~ .articles-grid .article-card.cat-gadgets { display: block; }
+
+/* Seguridad */
+#cat-security:checked ~ .articles-grid .article-card { display: none; }
+#cat-security:checked ~ .articles-grid .article-card.cat-security { display: block; }
+
+/* Software */
+#cat-software:checked ~ .articles-grid .article-card { display: none; }
+#cat-software:checked ~ .articles-grid .article-card.cat-software { display: block; }
+
+/* Tendencias */
+#cat-trends:checked ~ .articles-grid .article-card { display: none; }
+#cat-trends:checked ~ .articles-grid .article-card.cat-trends { display: block; }
+
+/* ==========================================
+   FILTRADO POR FECHA
+   ========================================== */
+
+/* Todos: no ocultar por fecha */
+#time-all-f:checked ~ .articles-grid .article-card { display: block; }
+
+/* 7 dias */
+#time-week-f:checked ~ .articles-grid .article-card { display: none; }
+#time-week-f:checked ~ .articles-grid .article-card.time-week { display: block; }
+
+/* 30 dias */
+#time-month-f:checked ~ .articles-grid .article-card { display: none; }
+#time-month-f:checked ~ .articles-grid .article-card.time-month { display: block; }
+
+/* Antiguos */
+#time-old-f:checked ~ .articles-grid .article-card { display: none; }
+#time-old-f:checked ~ .articles-grid .article-card.time-old { display: block; }
+
+/* ==========================================
+   COMBINACION: CATEGORIA + FECHA
+   ========================================== */
+
+/* Todas + 7 dias */
+#cat-all:checked ~ #time-week-f:checked ~ .articles-grid .article-card { display: none; }
+#cat-all:checked ~ #time-week-f:checked ~ .articles-grid .article-card.time-week { display: block; }
+
+/* Todas + 30 dias */
+#cat-all:checked ~ #time-month-f:checked ~ .articles-grid .article-card { display: none; }
+#cat-all:checked ~ #time-month-f:checked ~ .articles-grid .article-card.time-month { display: block; }
+
+/* Todas + antiguos */
+#cat-all:checked ~ #time-old-f:checked ~ .articles-grid .article-card { display: none; }
+#cat-all:checked ~ #time-old-f:checked ~ .articles-grid .article-card.time-old { display: block; }
+
+/* IA + 7 dias */
+#cat-ia:checked ~ #time-week-f:checked ~ .articles-grid .article-card { display: none; }
+#cat-ia:checked ~ #time-week-f:checked ~ .articles-grid .article-card.cat-ia.time-week { display: block; }
+
+/* IA + 30 dias */
+#cat-ia:checked ~ #time-month-f:checked ~ .articles-grid .article-card { display: none; }
+#cat-ia:checked ~ #time-month-f:checked ~ .articles-grid .article-card.cat-ia.time-month { display: block; }
+
+/* IA + antiguos */
+#cat-ia:checked ~ #time-old-f:checked ~ .articles-grid .article-card { display: none; }
+#cat-ia:checked ~ #time-old-f:checked ~ .articles-grid .article-card.cat-ia.time-old { display: block; }
+
+/* Gadgets + 7 dias */
+#cat-gadgets:checked ~ #time-week-f:checked ~ .articles-grid .article-card { display: none; }
+#cat-gadgets:checked ~ #time-week-f:checked ~ .articles-grid .article-card.cat-gadgets.time-week { display: block; }
+
+/* Gadgets + 30 dias */
+#cat-gadgets:checked ~ #time-month-f:checked ~ .articles-grid .article-card { display: none; }
+#cat-gadgets:checked ~ #time-month-f:checked ~ .articles-grid .article-card.cat-gadgets.time-month { display: block; }
+
+/* Gadgets + antiguos */
+#cat-gadgets:checked ~ #time-old-f:checked ~ .articles-grid .article-card { display: none; }
+#cat-gadgets:checked ~ #time-old-f:checked ~ .articles-grid .article-card.cat-gadgets.time-old { display: block; }
+
+/* Seguridad + 7 dias */
+#cat-security:checked ~ #time-week-f:checked ~ .articles-grid .article-card { display: none; }
+#cat-security:checked ~ #time-week-f:checked ~ .articles-grid .article-card.cat-security.time-week { display: block; }
+
+/* Seguridad + 30 dias */
+#cat-security:checked ~ #time-month-f:checked ~ .articles-grid .article-card { display: none; }
+#cat-security:checked ~ #time-month-f:checked ~ .articles-grid .article-card.cat-security.time-month { display: block; }
+
+/* Seguridad + antiguos */
+#cat-security:checked ~ #time-old-f:checked ~ .articles-grid .article-card { display: none; }
+#cat-security:checked ~ #time-old-f:checked ~ .articles-grid .article-card.cat-security.time-old { display: block; }
+
+/* Software + 7 dias */
+#cat-software:checked ~ #time-week-f:checked ~ .articles-grid .article-card { display: none; }
+#cat-software:checked ~ #time-week-f:checked ~ .articles-grid .article-card.cat-software.time-week { display: block; }
+
+/* Software + 30 dias */
+#cat-software:checked ~ #time-month-f:checked ~ .articles-grid .article-card { display: none; }
+#cat-software:checked ~ #time-month-f:checked ~ .articles-grid .article-card.cat-software.time-month { display: block; }
+
+/* Software + antiguos */
+#cat-software:checked ~ #time-old-f:checked ~ .articles-grid .article-card { display: none; }
+#cat-software:checked ~ #time-old-f:checked ~ .articles-grid .article-card.cat-software.time-old { display: block; }
+
+/* Tendencias + 7 dias */
+#cat-trends:checked ~ #time-week-f:checked ~ .articles-grid .article-card { display: none; }
+#cat-trends:checked ~ #time-week-f:checked ~ .articles-grid .article-card.cat-trends.time-week { display: block; }
+
+/* Tendencias + 30 dias */
+#cat-trends:checked ~ #time-month-f:checked ~ .articles-grid .article-card { display: none; }
+#cat-trends:checked ~ #time-month-f:checked ~ .articles-grid .article-card.cat-trends.time-month { display: block; }
+
+/* Tendencias + antiguos */
+#cat-trends:checked ~ #time-old-f:checked ~ .articles-grid .article-card { display: none; }
+#cat-trends:checked ~ #time-old-f:checked ~ .articles-grid .article-card.cat-trends.time-old { display: block; }
+
+/* ==========================================
+   ESTADO ACTIVO DE BOTONES (sidebar)
+   ========================================== */
+
+/* Categorias: boton activo cuando su radio esta checked */
+label[for="cat-all"]:has(~ #cat-all:checked),
+label[for="cat-ia"]:has(~ #cat-ia:checked),
+label[for="cat-gadgets"]:has(~ #cat-gadgets:checked),
+label[for="cat-security"]:has(~ #cat-security:checked),
+label[for="cat-software"]:has(~ #cat-software:checked),
+label[for="cat-trends"]:has(~ #cat-trends:checked) {
+    color: var(--primary);
+    background: rgba(195, 192, 255, 0.1);
+    border: 1px solid rgba(195, 192, 255, 0.2);
+}
+
+/* Temporalidad: label activo cuando su radio esta checked */
+label[for="time-all-f"]:has(~ #time-all-f:checked),
+label[for="time-week-f"]:has(~ #time-week-f:checked),
+label[for="time-month-f"]:has(~ #time-month-f:checked),
+label[for="time-old-f"]:has(~ #time-old-f:checked) {
+    color: var(--primary);
+}
+
+/* Temporalidad: punto radio activo */
+label[for="time-all-f"]:has(~ #time-all-f:checked)::before,
+label[for="time-week-f"]:has(~ #time-week-f:checked)::before,
+label[for="time-month-f"]:has(~ #time-month-f:checked)::before,
+label[for="time-old-f"]:has(~ #time-old-f:checked)::before {
+    border-color: var(--primary);
+    background: var(--primary);
+}
+
+label[for="time-all-f"]:has(~ #time-all-f:checked)::after,
+label[for="time-week-f"]:has(~ #time-week-f:checked)::after,
+label[for="time-month-f"]:has(~ #time-month-f:checked)::after,
+label[for="time-old-f"]:has(~ #time-old-f:checked)::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 14px;
+    transform: translateY(-50%);
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--on-primary);
+}
+
+/* ==========================================
+   ESTILO RADIO-TIME (circulo visual)
+   ========================================== */
+
+.radio-time {
+    position: relative;
+    padding-left: 38px;
+    cursor: pointer;
+}
+
+.radio-time::before {
+    content: '';
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 18px;
+    height: 18px;
+    border: 2px solid var(--outline);
+    border-radius: 50%;
+    background: var(--surface-container-high);
+    transition: all var(--transition-fast);
+}
+
+.radio-time:hover {
+    background: rgba(45, 52, 73, 0.2);
+}
+
+.radio-time:hover .radio-text {
+    color: var(--on-surface);
+}
