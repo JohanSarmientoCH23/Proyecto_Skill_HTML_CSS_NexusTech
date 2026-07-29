@@ -503,11 +503,15 @@
 }
 
 .rv-star.half {
-    background: linear-gradient(to right, #06b6d4 50%, rgba(148, 163, 184, 0.2) 50%);
+    background: linear-gradient(to right, #06b6d4 50%, rgba(148, 163, 184, 0.3) 50%);
 }
 
 .rv-star.half::after {
-    color: #06b6d4;
+    background: linear-gradient(to right, #06b6d4 50%, rgba(148, 163, 184, 0.3) 50%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
 }
 
 .rv-star-sm {
