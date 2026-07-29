@@ -438,7 +438,7 @@ El proyecto es **100% responsivo** y se adapta perfectamente a todos los disposi
 
 ```bash
 # 1. Clonar el repositorio
-git clone https://github.com/your-username/NexusTech.git
+git clone https://github.com/JohanSarmientoCH23/Proyecto_Skill_HTML_CSS_NexusTech.git
 
 # 2. Navegar al directorio del proyecto
 cd NexusTech
@@ -446,7 +446,6 @@ cd NexusTech
 # 3. Abrir index.html en tu navegador
 # Opción A: Hacer doble clic en index.html
 # Opción B: Usar Live Server en VS Code
-# Opción C: python -m http.server 8000
 ```
 
 ### Acceso Rápido
@@ -507,10 +506,8 @@ xdg-open index.html
 | | |
 |---|---|
 | 💻 **Desarrollador** | Johan |
-| 🐙 **GitHub** | [@your-username](https://github.com/your-username) |
-| 📧 **Email** | your-email@example.com |
-| 🔗 **LinkedIn** | [Tu LinkedIn](https://linkedin.com/in/your-profile) |
-| 🌐 **Portfolio** | [Tu Portfolio](https://your-portfolio.com) |
+| 🐙 **GitHub** | [JohanSarmientoCH23](https://github.com/JohanSarmientoCH23) |
+| 📧 **Email** | chagor04@gmail.com |
 
 ---
 
