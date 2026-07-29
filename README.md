@@ -13,9 +13,15 @@ Una plataforma completa de blog tecnológico con artículos, reseñas de product
 ![License](https://img.shields.io/badge/Licencia-MIT-green?style=for-the-badge)
 ![Status](https://img.shields.io/badge/Estado-Activo-brightgreen?style=for-the-badge)
 ![Update](https://img.shields.io/badge/Ultima%20Actualizacion-Julio%202026-blueviolet?style=for-the-badge)
-![GitHub%20Stars](https://img.shields.io/github/stars/your-username/NexusTech?style=for-the-badge)
-![GitHub%20Forks](https://img.shields.io/github/forks/your-username/NexusTech?style=for-the-badge)
-![GitHub%20Issues](https://img.shields.io/github/issues/your-username/NexusTech?style=for-the-badge)
+![GitHub%20Stars](https://img.shields.io/github/stars/JohanSarmientoCH23/Proyecto_Skill_HTML_CSS_NexusTech?style=for-the-badge)
+![GitHub%20Forks](https://img.shields.io/github/forks/JohanSarmientoCH23/Proyecto_Skill_HTML_CSS_NexusTech?style=for-the-badge)
+![GitHub%20Issues](https://img.shields.io/github/issues/JohanSarmientoCH23/Proyecto_Skill_HTML_CSS_NexusTech?style=for-the-badge)
+
+<br>
+
+[![Deployed on Vercel](https://img.shields.io/badge/Deployado%20en-Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://proyecto-skill-html-css-nexus-tech-phi.vercel.app/)
+
+### 🌐 [Ver Proyecto En Línea →](https://proyecto-skill-html-css-nexus-tech-phi.vercel.app/)
 
 ---
 
@@ -430,7 +436,17 @@ El proyecto es **100% responsivo** y se adapta perfectamente a todos los disposi
 
 ## 🚀 Instalación
 
-### Prerrequisitos
+### 🔗 Opción Rápida — Ver En Línea
+
+No necesitas instalar nada. Accede directamente al proyecto desplegado:
+
+**👉 [https://proyecto-skill-html-css-nexus-tech-phi.vercel.app/](https://proyecto-skill-html-css-nexus-tech-phi.vercel.app/)**
+
+---
+
+### Opción Local
+
+#### Prerrequisitos
 - Un navegador web moderno (Chrome, Firefox, Safari, Edge)
 - Un editor de código (VS Code recomendado)
 
@@ -441,7 +457,7 @@ El proyecto es **100% responsivo** y se adapta perfectamente a todos los disposi
 git clone https://github.com/JohanSarmientoCH23/Proyecto_Skill_HTML_CSS_NexusTech.git
 
 # 2. Navegar al directorio del proyecto
-cd NexusTech
+cd Proyecto_Skill_HTML_CSS_NexusTech
 
 # 3. Abrir index.html en tu navegador
 # Opción A: Hacer doble clic en index.html
@@ -507,6 +523,7 @@ xdg-open index.html
 |---|---|
 | 💻 **Desarrollador** | Johan |
 | 🐙 **GitHub** | [JohanSarmientoCH23](https://github.com/JohanSarmientoCH23) |
+| 🌐 **Proyecto En Línea** | [Vercel Deploy](https://proyecto-skill-html-css-nexus-tech-phi.vercel.app/) |
 | 📧 **Email** | chagor04@gmail.com |
 
 ---
